@@ -1,7 +1,5 @@
 function user_setup()
-	-- Hi Take
-	
-	
+		
 	-- Options: Override default values
 	state.CastingMode:options('Normal','Resistant','Fodder','Proc','OccultAcumen')
 	state.OffenseMode:options('Normal')
