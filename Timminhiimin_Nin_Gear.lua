@@ -64,7 +64,7 @@ function init_gear_sets()
     sets.precast.Flourish1 = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Moonbeam Nodowa",ear1="Gwati Earring",ear2="Digni. Earring",
         body="Mekosu. Harness",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back="Andartia's Mantle",waist="Olseni Belt",legs="Hattori Hakama +1",feet=gear.herculean_acc_feet}
+        back="Andartia's Mantle",waist="Olseni Belt",legs="Hattori Hakama +2",feet=gear.herculean_acc_feet}
 
     -- Fast cast sets for spells
     
@@ -427,8 +427,8 @@ function init_gear_sets()
 
     sets.buff.Migawari = {body="Hattori Ningi +3"}
     sets.buff.Doom = set_combine(sets.buff.Doom, {})
-    sets.buff.Yonin = {legs="Hattori Hakama +1"} --
-    sets.buff.Innin = {head="Hattori Zukin +2"}
+    sets.buff.Yonin = {legs="Hattori Hakama +2"} --
+    sets.buff.Innin = {head="Hattori Zukin +3"}
 	sets.buff.Futae = {hands="Hattori tekko +2"}
 	
     -- Extra Melee sets.  Apply these on top of melee sets.
