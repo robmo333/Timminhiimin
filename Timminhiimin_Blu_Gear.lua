@@ -353,7 +353,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic']['White Wind'] = {ammo="Falcon Eye",
 					head="Carmine Mask +1",neck="Phalaina Locket",ear1="Etiolation Earring",ear2="Loquac. Earring",
 			        body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Kunaji Ring",ring2="Etana Ring",
-			        back="Moonbeam Cape",waist="Luminary Sash",legs="Gyve Trousers",feet="Skaoi Boots"}
+			        back="Moonlight Cape",waist="Luminary Sash",legs="Gyve Trousers",feet="Skaoi Boots"}
 					
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
@@ -397,14 +397,14 @@ function init_gear_sets()
 	sets.idle = {ammo="Staunch Tathlum +1",head="Malignance Chapeau",body="Hashishin Mintan +2",hands="Hashi. Bazu. +2",
     legs="Hashishin Tayt +2",feet={ name="Herculean Boots", augments={'"Dbl.Atk."+1','Mag. Acc.+6 "Mag.Atk.Bns."+6','"Refresh"+2','Accuracy+15 Attack+15',}},
     neck="Loricate Torque +1",waist="Flume Belt +1",left_ear="Infused Earring",right_ear="Ethereal Earring",left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",back="Moonbeam Cape"}
+    right_ring="Stikini Ring +1",back="Moonlight Cape"}
 
 	
 
 	sets.idle.PDT = {ammo="Staunch Tathlum +1",
 				head=gear.herculean_refresh_head,neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
 		        body="Ayanmo Corazza +2",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-				back="Moonbeam Cape",waist="Flume Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
+				back="Moonlight Cape",waist="Flume Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
@@ -412,7 +412,7 @@ function init_gear_sets()
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 				head="Dampening Tam",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Brutal Earring",
 		        body="Ayanmo Corazza +2",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Dark Ring",
-				back="Moonbeam Cape",waist="Windbuffet Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
+				back="Moonlight Cape",waist="Windbuffet Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
 				head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Sanare Earring",

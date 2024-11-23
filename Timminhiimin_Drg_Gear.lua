@@ -142,7 +142,7 @@ function init_gear_sets()
         hands = "Sulevia's Gauntlets +2",
         ring1 = "Sheltered ring",
         ring2 = "Moonlight Ring",
-        back = "Moonbeam Cape",
+        back = "Moonlight Cape",
         waist = "Flume Belt +1",
         legs = "Carmine Cuisses +1",
         feet = "Sulevia's Leggings +2"

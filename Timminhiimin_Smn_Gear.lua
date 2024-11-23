@@ -258,12 +258,12 @@ function init_gear_sets()
     sets.idle = {main="Nirvana",sub="Oneiros Grip",ammo="Staunch Tathlum +1",
         head="Convoker's Horn +3",neck="Smn. Collar +2",ear1="Etiolation Earring",ear2="Infused Earring",
         body="Apogee Dalmatica +1",hands="Asteria Mitts +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
+        back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
 
     sets.idle.PDT = {main="Nirvana",sub="Alber Strap",ammo="Staunch Tathlum +1",
         head="Convoker's Horn +3",neck="Smn. Collar +2",ear1="Etiolation Earring",ear2="Genmei Earring",
         body="Vrikodara Jupon",hands="Asteria Mitts +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
+        back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 

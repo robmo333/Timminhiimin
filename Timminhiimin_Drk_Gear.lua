@@ -51,7 +51,7 @@ function init_gear_sets()
 	sets.precast.FC = {ammo="Sapience Orb",
 		head="Carmine Mask +1",neck="Orunmila's Torque",ear1="Malignance Earring",ear2="Loquacious Earring",
 		body="Fallen's Cuirass +3",hands="Leyline Gloves",ring1="Weather. Ring",ring2="Kishar Ring",
-		back="Moonbeam Cape",waist="Ioskeha Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
+		back="Moonlight Cape",waist="Ioskeha Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
 
 	sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 		
@@ -59,7 +59,7 @@ function init_gear_sets()
 	sets.midcast.FastRecast = {ammo="Staunch Tathlum +1",
 		head="Carmine Mask +1",neck="Orunmila's Torque",ear1="Malignance Earring",ear2="Loquacious Earring",
 		body="Fallen's Cuirass +3",hands="Leyline Gloves",ring1="Weather. Ring",ring2="Kishar Ring",
-		back="Moonbeam Cape",waist="Ioskeha Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
+		back="Moonlight Cape",waist="Ioskeha Belt +1",legs="Eschite Cuisses",feet="Odyssean Greaves"}
                    
 	-- Specific spells
  
@@ -76,7 +76,7 @@ function init_gear_sets()
 	sets.midcast['Dread Spikes'] = {ammo="Egoist's Tathlum",
 		head="Ratri Sallet +1",neck="Sanctity Necklace",ear1="Odnowa Earring +1",ear2="Eabani Earring",
 		body="Heathen's Cuirass +1",hands="Ratri Gadlings +1",ring1="Moonlight Ring",ring2="Moonlight Ring",
-		back="Moonbeam Cape",waist="Eschan Stone",legs="Ratri Cuisses +1",feet="Ratri Sollerets +1"}
+		back="Moonlight Cape",waist="Eschan Stone",legs="Ratri Cuisses +1",feet="Ratri Sollerets +1"}
 		
 	sets.midcast.Absorb = set_combine(sets.midcast['Dark Magic'], {back="Chuparrosa Mantle",head="Ig. burgonet +3",
          ring1="Kishar Ring",})
@@ -190,12 +190,12 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Moonlight Ring",
-		back="Moonbeam Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sakpata's Leggings"}
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sakpata's Leggings"}
 		
     sets.idle.PDT = {ammo="Staunch Tathlum +1",
 		head="Sulevia's Mask +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
 		body="Sulevia's Platemail +2",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Moonlight Ring +1",
-		back="Moonbeam Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 		
