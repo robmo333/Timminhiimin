@@ -193,7 +193,7 @@ function init_gear_sets()
 		head={ name="Apogee Crown +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
 		feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}})
 		
-    sets.midcast.Pet.PhysicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
+    sets.midcast.Pet.PhysicalBloodPactRage.Acc = {feet="Convo. Pigaches +2"}
 
     sets.midcast.Pet.MagicalBloodPactRage = {main=gear.grioavolr_pet_staff,sub="Elan Strap +1",ammo="Sancus Sachet +1",
         head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},neck="Smn. Collar +2",ear1="Gelos Earring",ear2="Lugalbanda Earring",
@@ -201,7 +201,7 @@ function init_gear_sets()
         back=gear.magic_jse_back,waist="Regal Belt",legs={ name="Apogee Slacks +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
 		feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}}
 
-    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
+    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +2"}
 
     -- Spirits cast magic spells, which can be identified in standard ways.
     
@@ -216,7 +216,7 @@ function init_gear_sets()
         body="Con. Doublet +3",hands=gear.merlinic_magpact_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back,waist="Regal Belt",legs={ name="Apogee Slacks +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
 		feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}}
-	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +3"}
+	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +2"}
 	
 	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {head={ name="Apogee Crown +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
 		waist="Regal Belt",legs="Enticer's Pants",feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}})
@@ -300,7 +300,7 @@ function init_gear_sets()
     sets.idle.Spirit = {main="Gridarvor",sub="Oneiros Grip",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Evoker's Ring",ring2="Sheltered Ring",
-        back=gear.phys_jse_back,waist="Lucidity Sash",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
+        back=gear.phys_jse_back,waist="Lucidity Sash",legs="Assid. Pants +1",feet="Convo. Pigaches +2"}
 		
     sets.idle.PDT.Spirit = {main="Terra's Staff",sub="Oneiros Grip",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
@@ -370,7 +370,7 @@ function init_gear_sets()
     sets.engaged = {main="Gridarvor",sub="Bloodrain Strap",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Shulmanu Collar",ear1="Digni. Earring",ear2="Telos Earring",
         body="Con. Doublet +3",hands="Gazu Bracelet +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.phys_jse_back,waist="Olseni Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
+        back=gear.phys_jse_back,waist="Olseni Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +2"}
 end
 
 -- Select default macro book on initial load or subjob change.
