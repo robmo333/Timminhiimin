@@ -281,21 +281,11 @@ function init_gear_sets()
 		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 		waist="Ioskeha Belt +1",legs="Sulev. Cuisses +2",feet="Sulev. Leggings +2"}
 		
-	sets.engaged.DTLite = {
-    ammo="Seething Bomblet +1",
-    head="Sulevia's Mask +2",
-    body="Sulevia's Plate. +2",
-    hands="Sulev. Gauntlets +2",
-    legs="Sulev. Cuisses +2",
-    feet="Sulev. Leggings +2",
-    neck="Loricate Torque +1",
-    waist="Ioskeha Belt +1",
-    ear1="Cessance Earring",
-    ear2="Telos Earring",
-    ring1="Moonlight Ring",
-    ring2="Moonlight Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-}	
+	sets.engaged.DTLite = {ammo="Aurgelmir Orb +1",
+		head="Sakpata's Helm",neck="Abyssal bead necklace +2",ear1="Telos Earring",ear2="Cessance Earring",
+		body="Sakpata's breastplate",hands="Sakpata's Gauntlets",ring1="Moonlight Ring",ring2="Moonlight Ring",
+		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		waist="Sailfi belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}	
 --[[
     sets.engaged.Adoulin = {}
 	sets.engaged.SomeAcc.Adoulin = {}

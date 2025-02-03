@@ -143,10 +143,10 @@ function init_gear_sets()
 	sets.precast.WS['Blade: Kamu'] = {ammo="Seeth. Bomblet +1",head="Adhemar Bonnet +1",body="Mpaca's Doublet",hands="Adhemar Wrist. +1",legs="Mpaca's Hose",feet="Hattori Kyahan +3",
 		neck="Ninja Nodowa +2",waist="Sailfi Belt +1",left_ear="Lugra Earring +1",right_ear="Hattori Earring +1",left_ring="Epona's Ring",right_ring="Gere Ring",
 		back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
-    sets.precast.WS['Blade: Kamu'].SomeAcc = {ammo="Crepuscular Pebble",head="Hachiya Hatsu. +3",body="Ken. Samue +1",hands="Adhemar Wrist. +1",legs="Mpaca's Hose",feet="Tatena. Sune. +1",neck="Ninja Nodowa +2",
+    sets.precast.WS['Blade: Kamu'].SomeAcc = {ammo="Crepuscular Pebble",head="Hachiya Hatsu. +3",body="Ken. Samue +1",hands="Adhemar Wrist. +1",legs="Mpaca's Hose",feet="Malignance Boots",neck="Ninja Nodowa +2",
 		waist="Sailfi Belt +1",left_ear="Lugra Earring +1",right_ear="Hattori Earring +1",left_ring="Sroda Ring",right_ring="Gere Ring",
 		back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
-    sets.precast.WS['Blade: Kamu'].Full =  {ammo="Crepuscular Pebble",head="Hachiya Hatsu. +3",body="Ken. Samue +1",hands="Adhemar Wrist. +1",legs="Mpaca's Hose",feet="Tatena. Sune. +1",neck="Ninja Nodowa +2",
+    sets.precast.WS['Blade: Kamu'].Full =  {ammo="Crepuscular Pebble",head="Hachiya Hatsu. +3",body="Ken. Samue +1",hands="Adhemar Wrist. +1",legs="Mpaca's Hose",feet="Malignance Boots",neck="Ninja Nodowa +2",
 		waist="Sailfi Belt +1",left_ear="Lugra Earring +1",right_ear="Hattori Earring +1",left_ring="Sroda Ring",right_ring="Gere Ring",
 		back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 	sets.precast.WS['Blade: Kamu'].Fodder = set_combine(sets.precast.WS['Blade: Kamu'], {})
@@ -352,7 +352,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
-    legs="Malignance Tights",feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    legs="Malignance Tights",feet="Malignance Boots",
     neck="Loricate Torque +1",waist="Flume Belt +1",left_ear="Arete del Luna +1",right_ear="Eabani Earring",
     left_ring="Defending Ring",right_ring="Archon Ring",back="Moonlight Cape",}
 
@@ -407,16 +407,16 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {ammo="Date Shuriken",head="Ryuo Somen +1",body="Malignance Tabard",hands="Malignance Gloves",legs="Mochi. Hakama +3",feet="Tatena. Sune. +1",neck="Ninja Nodowa +2",
+    sets.engaged = {ammo="Date Shuriken",head="Ryuo Somen +1",body="Malignance Tabard",hands="Malignance Gloves",legs="Mochi. Hakama +3",feet="Malignance Boots",neck="Ninja Nodowa +2",
 		waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Dedition Earring",left_ring="Defending Ring",right_ring="Moonlight Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
     sets.engaged.SomeAcc = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
-		legs="Malignance Tights",feet="Tatena. Sune. +1",
+		legs="Malignance Tights",feet="Malignance Boots",
 		neck="Ninja Nodowa +2",waist="Sailfi Belt +1",left_ear="Telos Earring",right_ear="Dedition. Earring",left_ring="Gere Ring",
 		right_ring="Epona's Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
-    sets.engaged.Full = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",feet="Tatena. Sune. +1",
+    sets.engaged.Full = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",feet="Malignance Boots",
 		neck="Ninja Nodowa +2",waist="Windbuffet Belt +1",left_ear="Dedition Earring",right_ear="Brutal Earring",left_ring="Defending Ring",right_ring="Gere Ring",
 		back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
-	sets.engaged.Fodder = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Adhemar Wrist. +1",legs="Samnuha Tights",feet="Tatena. Sune. +1",neck="Ninja Nodowa +2",waist="Sailfi Belt +1",
+	sets.engaged.Fodder = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Adhemar Wrist. +1",legs="Samnuha Tights",feet="Malignance Boots",neck="Ninja Nodowa +2",waist="Sailfi Belt +1",
 		left_ear="Telos Earring",right_ear="Dedition Earring",left_ring="Epona's Ring",right_ring="Gere Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
 	sets.engaged.WTF = {ammo="Date Shuriken",head="Malignance Chapeau",body="Hattori Ningi +3",hands="Malignance Gloves",legs="Mpaca's Hose",feet="Malignance Boots",neck="Ninja Nodowa +2",waist="Windbuffet Belt +1",
 		left_ear="Odnowa Earring +1",right_ear="Balder Earring +1",right_ring="Epona's Ring",left_ring="Gere Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}

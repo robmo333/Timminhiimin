@@ -395,7 +395,7 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",head="Malignance Chapeau",body="Hashishin Mintan +2",hands="Hashi. Bazu. +2",
-    legs="Hashishin Tayt +2",feet={ name="Herculean Boots", augments={'"Dbl.Atk."+1','Mag. Acc.+6 "Mag.Atk.Bns."+6','"Refresh"+2','Accuracy+15 Attack+15',}},
+    legs="Hashishin Tayt +2",feet="Malignance Boots",
     neck="Loricate Torque +1",waist="Flume Belt +1",left_ear="Infused Earring",right_ear="Ethereal Earring",left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",back="Moonlight Cape"}
 
@@ -448,12 +448,12 @@ function init_gear_sets()
 	-- Engaged sets
 
 	sets.engaged = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
-    legs="Malignance Tights",feet={ name="Herculean Boots", augments={'Accuracy+28','"Triple Atk."+4','Attack+6',}},
+    legs="Malignance Tights",feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Telos Earring",
     left_ring="Epona's Ring",right_ring="Defending Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
 
 	sets.engaged.AM = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
-    legs="Malignance Tights",feet={ name="Herculean Boots", augments={'Accuracy+28','"Triple Atk."+4','Attack+6',}},
+    legs="Malignance Tights",feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Telos Earring",
     left_ring="Epona's Ring",right_ring="Defending Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
 

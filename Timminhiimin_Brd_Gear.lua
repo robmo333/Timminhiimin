@@ -101,10 +101,15 @@ function init_gear_sets()
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},left_ear="Regal Earring",right_ear="Ishvara Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},right_ring="Epaminondas's Ring",
     back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
+	
+	sets.precast.WS['Aeolian Edge'] = {ammo="Oshasha's Treatise",head="Nyame Helm",body="Nyame Mail",hands="Nyame Gauntlets",
+	legs="Nyame Flanchard",feet="Nyame Sollerets",neck="Sibyl Scarf",waist="Orpheus's Sash",left_ear="Regal Earring",
+	right_ear="Moonshade Earring",left_ring="Epaminondas's Ring",right_ring="Medada's Ring",
+	back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 		
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Ishvara Earring",ear2="Telos Earring",}
-	sets.AccMaxTP = {ear1="Zennaroi Earring",ear2="Telos Earring"}
+	--sets.MaxTP = {ear1="Ishvara Earring",ear2="Telos Earring",}
+	--sets.AccMaxTP = {ear1="Zennaroi Earring",ear2="Telos Earring"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
@@ -268,9 +273,8 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}}
 	sets.engaged.Acc = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
 		head="Aya. Zucchetto +2",body="Ayanmo Corazza +2",hands="Bunzi's Gloves",
-		legs={ name="Telchine Braconi", augments={'Accuracy+15 Attack+15','"Store TP"+6','DEX+9',}},
-		feet={ name="Telchine Pigaches", augments={'Accuracy+18','"Store TP"+6','DEX+10',}},
-		neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Telos Earring",right_ear="Cessance Earring",
+		legs="Aya. Cosciales +2",feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Eabani Earring",
 		left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}}
 
