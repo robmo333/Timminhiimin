@@ -142,6 +142,7 @@ function init_gear_sets()
 	sets.midcast.Paeon = {range="Daurdabla"}
 	sets.midcast.March = {}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
+	sets.midcast['Aria of Passion'] = set_combine(sets.midcast.March,{range="Loughnashade"})
 	sets.midcast.Minuet = {}
 	sets.midcast.Minne = {legs="Mousai Seraweels +1"}
 	sets.midcast.Carol = {hands="Mousai Gages +1"}
