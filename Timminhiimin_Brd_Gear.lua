@@ -68,6 +68,7 @@ function init_gear_sets()
 		
 	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC['Aria of Passion'] = set_combine(sets.precast.FC.BardSong,{range="Loughnashade"})
 
 	sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla
@@ -274,7 +275,7 @@ function init_gear_sets()
 	sets.engaged.Acc = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
 		head="Aya. Zucchetto +2",body="Ayanmo Corazza +2",hands="Bunzi's Gloves",
 		legs="Aya. Cosciales +2",feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Eabani Earring",
+		neck="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Eabani Earring",
 		left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}}
 

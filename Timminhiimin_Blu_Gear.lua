@@ -443,7 +443,7 @@ function init_gear_sets()
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
 	sets.weapons.Tizona = {main="Tizona",sub="Thibron"}
 	sets.weapons.Naegling = {main="Naegling",sub="Thibron"}
-	sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
+	sets.weapons.MagicWeapons = {main="Maxentius",sub="Bunzi's Rod"}
 	sets.weapons.BS = {main="Save the queen II",sub="Chicken Knife II"}	
 	-- Engaged sets
 
@@ -480,11 +480,11 @@ function init_gear_sets()
 	--sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",legs="Gyve Trousers",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	--sets.Self_Healing_Club = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	--sets.Self_Healing_DWClub = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Healing_Club = {}
-	sets.Healing_DWClub = {}
+	--sets.Healing_Club = {}
+	--sets.Healing_DWClub = {}
 	--sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
-	sets.MagicBurst = {body="Samnuha Coat",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring"}
+	--sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
+	--sets.MagicBurst = {body="Samnuha Coat",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring"}
 
 end
 
