@@ -268,7 +268,7 @@ function init_gear_sets()
 	
 	sets.engaged = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
 		head="Aya. Zucchetto +2",body="Ayanmo Corazza +2",hands="Bunzi's Gloves",legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Volte Spats",neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Telos Earring",right_ear="Cessance Earring",
+		feet="Volte Spats",neck="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Cessance Earring",
 		left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}}
 	sets.engaged.Acc = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
