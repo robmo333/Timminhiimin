@@ -353,7 +353,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
     legs="Malignance Tights",feet="Malignance Boots",
-    neck="Loricate Torque +1",waist="Flume Belt +1",left_ear="Arete del Luna +1",right_ear="Eabani Earring",
+    neck="Loricate Torque +1",waist="Platinum Moogle Belt",left_ear="Arete del Luna +1",right_ear="Eabani Earring",
     left_ring="Defending Ring",right_ring="Archon Ring",back="Moonlight Cape",}
 
     sets.idle.PDT = {ammo="Togakushi Shuriken",

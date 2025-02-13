@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('None','Carn','CarnDW','DualWeapons','Swords','NukeWeapons')
+	state.Weapons:options('None','Carn','CarnDW','DualWeapons','Swords','NukeWeapons', 'Trails')
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Daurdabla'
@@ -38,7 +38,7 @@ function init_gear_sets()
 	sets.weapons.DualWeapons = {main="Naegling",sub="Ternion Dagger +1"}
 	sets.weapons.Swords = {main="Naegling",sub="Centovente"}
 	sets.weapons.NukeWeapons = {main="Malevolence",sub="Malevolence"}
-	
+	sets.weapons.Trails = {main="Renegade",sub="Ternion Dagger +1"}
 	-- Precast Sets
 
 	-- Fast cast sets for spells

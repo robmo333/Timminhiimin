@@ -7,7 +7,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Aeneas','LowBuff')
+	state.Weapons:options('None','Aeneas','LowBuff')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 
 	
@@ -129,7 +129,9 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Flume Belt",legs="Dashing Subligar",feet="Ahosi Leggings"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {head="Lilitu Headpiece",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",body=gear.herculean_wsd_body,legs=gear.herculean_wsd_legs})
+    sets.precast.WS["Rudra's Storm"] = {ammo="Crepuscular Pebble",head="Nyame Helm",neck="Etoile Gorget +2",ear1="Moonshade Earring",ear2="Macu. Earring +1",
+        body="Gleti Cuirass",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Regal Ring",
+        back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Gleti Breeches",feet="Nyame Sollerets"}
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Lilitu Headpiece",neck="Caro Necklace",ear1="Moonshade Earring",body="Meg. Cuirie +2",legs=gear.herculean_wsd_legs})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",body="Meg. Cuirie +2"})
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -187,10 +189,9 @@ function init_gear_sets()
 
     -- Idle sets
 
-    sets.idle = {ammo="Staunch Tathlum",
-        head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Meg. Cuirie +2",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Sheltered Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
+    sets.idle = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",neck="Etoile Gorget +2",ear1="Telos Earring",ear2="Dedition Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+        back="Moonlight Belt +1",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
     
@@ -221,10 +222,9 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {ammo="Yamarang",
-        head="Dampening Tam",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
-        back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+    sets.engaged = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",neck="Etoile Gorget +2",ear1="Telos Earring",ear2="Dedition Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+        back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.engaged.DTLite = {ammo="Yamarang",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
