@@ -191,7 +191,7 @@ function init_gear_sets()
 
     sets.idle = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",neck="Etoile Gorget +2",ear1="Telos Earring",ear2="Dedition Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-        back="Moonlight Belt +1",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonlight Cape1",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
     
@@ -212,7 +212,7 @@ function init_gear_sets()
 		body="Adhemar Jacket +1",hands="Leyline Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
 		back="Mujin Mantle",waist="Engraved Belt",legs="Meg. Chausses +2",feet="Ahosi Leggings"}
 
-    sets.Kiting = {feet="Skadi's Jambeaux +1"}
+    --sets.Kiting = {feet="Skadi's Jambeaux +1"}
 
     -- Engaged sets
 
@@ -224,7 +224,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",neck="Etoile Gorget +2",ear1="Telos Earring",ear2="Dedition Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.engaged.DTLite = {ammo="Yamarang",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
