@@ -191,7 +191,7 @@ function init_gear_sets()
 
     sets.idle = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",neck="Etoile Gorget +2",ear1="Telos Earring",ear2="Dedition Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-        back="Moonlight Cape1",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonlight Cape1",waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
     
