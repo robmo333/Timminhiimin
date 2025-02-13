@@ -47,7 +47,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Taming Sari"}
 	sets.weapons.LowBuff = {main="Aeneas",sub="Blurred Knife +1"}
-	sets.weapons.Temp = {main="Tauret",sub="Centovente"}
+	sets.weapons.Temp = {main="Gleti's Knife",sub="Centovente"}
     -- Precast Sets
     
     -- Precast sets to enhance JAs
