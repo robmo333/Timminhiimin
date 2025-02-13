@@ -7,7 +7,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Aeneas','LowBuff')
+	state.Weapons:options('Temp','Aeneas','LowBuff')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 
 	
@@ -47,7 +47,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Taming Sari"}
 	sets.weapons.LowBuff = {main="Aeneas",sub="Blurred Knife +1"}
-	
+	sets.weapons.Temp = {main="Tauret",sub="Centovente"}
     -- Precast Sets
     
     -- Precast sets to enhance JAs
