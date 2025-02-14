@@ -8,7 +8,7 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Tizona','Naegling','Tizalmace','MagicWeapons','MeleeClubs','BS')
+	state.Weapons:options('MagicWeapons','Tizona','Naegling','Tizalmace','MeleeClubs','BS')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
@@ -443,7 +443,7 @@ function init_gear_sets()
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
 	sets.weapons.Tizona = {main="Tizona",sub="Thibron"}
 	sets.weapons.Naegling = {main="Naegling",sub="Thibron"}
-	sets.weapons.MagicWeapons = {main="Maxentius",sub="Bunzi's Rod"}
+	sets.weapons.MagicWeapons = {main="Bunzi's Rod",sub="Maxentius"}
 	sets.weapons.BS = {main="Save the queen II",sub="Chicken Knife II"}	
 	-- Engaged sets
 
