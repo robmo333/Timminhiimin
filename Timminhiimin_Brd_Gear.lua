@@ -232,7 +232,7 @@ function init_gear_sets()
 	
 	sets.idle = {range={ name="Linos", augments={'Mag. Evasion+15','"Fast Cast"+6','INT+6 MND+6',}},
 		head="Fili Calot +3",body="Inyanga Jubbah +2",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
-		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Carrier's Sash",left_ear="Eabani Earring",
+		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",
 		right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Dark Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
