@@ -319,7 +319,7 @@ function init_gear_sets()
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
 	
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Gifted Earring",ear2="Hashishin Earring +1",
+		head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Njordr Earring",ear2="Hashishin Earring +1",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
 
