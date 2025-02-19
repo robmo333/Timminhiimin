@@ -9,7 +9,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Heishi','HeishiTer','Naegling','Dagger','Kikoku','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff','None')
+	state.Weapons:options('Heishi','HeishiTer','Naegling','Dagger','Kikoku','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff','Trial','None')
 	state.Stance = M{['description']='Stance','None','Yonin','Innin'}
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None','SuppaBrutal','DWEarrings','DWMax'}
 	
@@ -411,8 +411,8 @@ function init_gear_sets()
 		waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Dedition Earring",left_ring="Defending Ring",right_ring="Moonlight Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
     sets.engaged.SomeAcc = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Malignance Tights",feet="Malignance Boots",
-		neck="Ninja Nodowa +2",waist="Sailfi Belt +1",left_ear="Telos Earring",right_ear="Dedition. Earring",left_ring="Gere Ring",
-		right_ring="Epona's Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
+		neck="Ninja Nodowa +2",waist="Sailfi Belt +1",left_ear="Telos Earring",right_ear="Dedition. Earring",left_ring="Epona's Ring",
+		right_ring="Gere Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
     sets.engaged.Full = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",feet="Malignance Boots",
 		neck="Ninja Nodowa +2",waist="Windbuffet Belt +1",left_ear="Dedition Earring",right_ear="Brutal Earring",left_ring="Defending Ring",right_ring="Gere Ring",
 		back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
@@ -450,6 +450,7 @@ function init_gear_sets()
 	sets.weapons.ProcStaff = {main="Aquilo's Staff",sub=empty}
 	sets.weapons.Naegling = {main="Naegling", sub="Kunimitsu"}
 	sets.weapons.Kikoku = {main="Kikoku",sub="Kunai"}
+	sets.weapons.Trial = {main="Heishi Shorinken",sub="Uzura +2"}
 end
 
 -- Select default macro book on initial load or subjob change.

@@ -4,7 +4,7 @@ function user_setup()
 	state.HybridMode:options('Normal','DTLite','PDT','MDT')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','HighAcc','FullAcc','Fodder')
     state.CastingMode:options('Normal','Resistant','Fodder','Proc')
-    state.IdleMode:options('Normal','Sphere','PDT','DTHippo')
+    state.IdleMode:options('Normal','PDT')
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -172,11 +172,11 @@ function init_gear_sets()
 		body="Luhlaza Jubbah +3",hands="Luh. Bazubands +3",ring1="Ifrit's Ring +1",ring2="Shukuyu Ring",
 		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},waist="Prosilio Belt +1",legs="Hashishin Tayts +3",feet="Luhlaza Charuqs +3"}
 
-	sets.midcast['Blue Magic'].Physical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Blue Magic'].Physical.Resistant = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
-	sets.midcast['Blue Magic'].Physical.Fodder = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Blue Magic'].Physical.Fodder = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
-	sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
 	sets.midcast['Blue Magic'].PhysicalAcc.Resistant = set_combine(sets.midcast['Blue Magic'].PhysicalAcc, {})
 	sets.midcast['Blue Magic'].PhysicalAcc.Fodder = sets.midcast['Blue Magic'].Fodder
@@ -315,6 +315,16 @@ function init_gear_sets()
 					head="Carmine Mask",neck="Phalaina Locket",ear1="Regal Earring",ear2="Mendi. Earring",
 			        body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Kunaji Ring",ring2="Haoma's Ring",
 			        back="Solemnity Cape",waist="Gishdubar Sash",legs="Gyve Trousers",feet="Despair Greaves"}
+					
+	sets.midcast['Blue Magic']['Cruel Joke'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +2",
+		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
+		waist="Null Belt",left_ear="Digni. Earring",right_ear="Hashi. Earring +1",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Medada's Ring",back="Null Shawl"}
+		
+	sets.midcast['Blue Magic']['Absolute Terror'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +2",
+		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
+		waist="Null Belt",left_ear="Digni. Earring",right_ear="Hashi. Earring +1",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Medada's Ring",back="Null Shawl"}
 
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
 	
@@ -342,36 +352,30 @@ function init_gear_sets()
 	sets.Learning = {hands="Assim. Bazu. +3"}
 
 	-- Resting sets
-	sets.resting = {main="Bolelabunga",sub="Genmei Shield",ammo="Falcon Eye",
-			      head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Ethereal Earring",
-			      body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
-			      back="Bleating Mantle",waist="Flume Belt",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
+	sets.resting = {}
 
 	-- Idle sets
-	sets.idle = {ammo="Staunch Tathlum +1",head="Malignance Chapeau",body="Hashishin Mintan +2",hands="Hashi. Bazu. +2",
-    legs="Hashishin Tayt +3",feet="Malignance Boots",
-    neck="Loricate Torque +1",waist="Flume Belt +1",left_ear="Infused Earring",right_ear="Ethereal Earring",left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",back="Moonlight Cape"}
+	sets.idle = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
+		legs="Hashishin Tayt +3",feet="Malignance Boots",
+		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Infused Earring",left_ring="Vengeful Ring",
+		right_ring="Defending Ring",back="Null Shawl"}
 
-	
+	sets.idle.PDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
+		legs="Hashishin Tayt +3",feet="Malignance Boots",
+		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Infused Earring",left_ring="Vengeful Ring",
+		right_ring="Defending Ring",back="Null Shawl"}
 
-	sets.idle.PDT = {ammo="Staunch Tathlum +1",
-				head=gear.herculean_refresh_head,neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Genmei Earring",
-		        body="Ayanmo Corazza +2",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-				back="Moonlight Cape",waist="Flume Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
-
-	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
 	-- Defense sets
-	sets.defense.PDT = {ammo="Staunch Tathlum +1",
-				head="Dampening Tam",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Brutal Earring",
-		        body="Ayanmo Corazza +2",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Dark Ring",
-				back="Moonlight Cape",waist="Windbuffet Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
+	sets.defense.PDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
+		legs="Hashishin Tayt +3",feet="Malignance Boots",
+		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Ethereal Earring",left_ring="Vengeful Ring",
+		right_ring="Defending Ring",back="Null Shawl"}
 
-	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-				head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Sanare Earring",
-		        body="Ayanmo Corazza +2",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-				back="Engulfer Cape +1",waist="Flax Sash",legs="Hagondes Pants +1",feet="Ahosi Leggings"}
+	sets.defense.MDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
+		legs="Hashishin Tayt +3",feet="Malignance Boots",
+		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Ethereal Earring",left_ring="Vengeful Ring",
+		right_ring="Defending Ring",back="Null Shawl"}
 
     sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Amalric Coif +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -394,7 +398,7 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
-	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
+	sets.weapons.MeleeClubs = {main="Maxentius",sub="Thibron"}
 	sets.weapons.Tizona = {main="Tizona",sub="Thibron"}
 	sets.weapons.Naegling = {main="Naegling",sub="Thibron"}
 	sets.weapons.MagicWeapons = {main="Maxentius",sub="Bunzi's Rod"}
