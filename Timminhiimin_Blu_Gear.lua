@@ -90,7 +90,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
 
-	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan +2"})
+	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan +3"})
 
 
 	-- Weaponskill sets
@@ -216,7 +216,7 @@ function init_gear_sets()
 
 	-- Magical Spells --
 
-	sets.midcast['Blue Magic'].Magical = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +2",
+	sets.midcast['Blue Magic'].Magical = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +3",
 		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
 		waist="Orpheus's Sash",left_ear="Friomisi Earring",right_ear="Regal Earring",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Medada's Ring",back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}}
@@ -289,13 +289,13 @@ function init_gear_sets()
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
 	sets.midcast['Blue Magic'].Stun = {ammo="Pemphredo Tathlum",head="Hashishin Kavuk +3",
-				body="Hashishin Mintan +2",hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
+				body="Hashishin Mintan +3",hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
 				neck="Null Loop",waist="Null Belt",left_ear="Regal Earring",right_ear="Digni. Earring",
 				left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
 				back={ name="Cornflower Cape", augments={'MP+20','DEX+2','Accuracy+5','Blue Magic skill +9',}}}
 
 	sets.midcast['Blue Magic'].Stun.Resistant = {ammo="Pemphredo Tathlum",head="Hashishin Kavuk +3",
-				body="Hashishin Mintan +2",hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
+				body="Hashishin Mintan +3",hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
 				neck="Null Loop",waist="Null Belt",left_ear="Regal Earring",right_ear="Digni. Earring",
 				left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
 				back={ name="Cornflower Cape", augments={'MP+20','DEX+2','Accuracy+5','Blue Magic skill +9',}}}
@@ -316,12 +316,12 @@ function init_gear_sets()
 			        body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Kunaji Ring",ring2="Haoma's Ring",
 			        back="Solemnity Cape",waist="Gishdubar Sash",legs="Gyve Trousers",feet="Despair Greaves"}
 					
-	sets.midcast['Blue Magic']['Cruel Joke'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +2",
+	sets.midcast['Blue Magic']['Cruel Joke'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +3",
 		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
 		waist="Null Belt",left_ear="Digni. Earring",right_ear="Hashi. Earring +1",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Medada's Ring",back="Null Shawl"}
 		
-	sets.midcast['Blue Magic']['Absolute Terror'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +2",
+	sets.midcast['Blue Magic']['Absolute Terror'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +3",
 		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
 		waist="Null Belt",left_ear="Digni. Earring",right_ear="Hashi. Earring +1",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Medada's Ring",back="Null Shawl"}
@@ -379,7 +379,7 @@ function init_gear_sets()
 
     sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Amalric Coif +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Hashishin Mintan +2",hands="Leyline Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
+		body="Hashishin Mintan +3",hands="Leyline Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
         back=gear.mab_jse_back,waist="Luminary Sash",legs="Telchine Braconi",feet="Ahosi Leggings"}
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical
