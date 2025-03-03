@@ -217,7 +217,7 @@ function init_gear_sets()
 	-- Magical Spells --
 
 	sets.midcast['Blue Magic'].Magical = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +3",
-		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
+		hands="Hashi. Bazu. +3",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
 		waist="Orpheus's Sash",left_ear="Friomisi Earring",right_ear="Regal Earring",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Medada's Ring",back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}}
 					 
@@ -289,13 +289,13 @@ function init_gear_sets()
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
 	sets.midcast['Blue Magic'].Stun = {ammo="Pemphredo Tathlum",head="Hashishin Kavuk +3",
-				body="Hashishin Mintan +3",hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
+				body="Hashishin Mintan +3",hands="Hashi. Bazu. +3",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
 				neck="Null Loop",waist="Null Belt",left_ear="Regal Earring",right_ear="Digni. Earring",
 				left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
 				back={ name="Cornflower Cape", augments={'MP+20','DEX+2','Accuracy+5','Blue Magic skill +9',}}}
 
 	sets.midcast['Blue Magic'].Stun.Resistant = {ammo="Pemphredo Tathlum",head="Hashishin Kavuk +3",
-				body="Hashishin Mintan +3",hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
+				body="Hashishin Mintan +3",hands="Hashi. Bazu. +3",legs="Hashishin Tayt +3",feet="Hashi. Basmak +3",
 				neck="Null Loop",waist="Null Belt",left_ear="Regal Earring",right_ear="Digni. Earring",
 				left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
 				back={ name="Cornflower Cape", augments={'MP+20','DEX+2','Accuracy+5','Blue Magic skill +9',}}}
@@ -317,12 +317,12 @@ function init_gear_sets()
 			        back="Solemnity Cape",waist="Gishdubar Sash",legs="Gyve Trousers",feet="Despair Greaves"}
 					
 	sets.midcast['Blue Magic']['Cruel Joke'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +3",
-		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
+		hands="Hashi. Bazu. +3",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
 		waist="Null Belt",left_ear="Digni. Earring",right_ear="Hashi. Earring +1",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Medada's Ring",back="Null Shawl"}
 		
 	sets.midcast['Blue Magic']['Absolute Terror'] = {ammo="Ghastly Tathlum +1",head="Hashishin Kavuk +3",body="Hashishin Mintan +3",
-		hands="Hashi. Bazu. +2",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
+		hands="Hashi. Bazu. +3",legs="Hashishin Tayt +3",feet=" Hashi. Basmak +3",neck="Sibyl Scarf",
 		waist="Null Belt",left_ear="Digni. Earring",right_ear="Hashi. Earring +1",left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Medada's Ring",back="Null Shawl"}
 

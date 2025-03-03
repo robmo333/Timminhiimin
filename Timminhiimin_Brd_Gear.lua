@@ -43,18 +43,18 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 	sets.precast.FC = {range={ name="Linos", augments={'Mag. Evasion+15','"Fast Cast"+6','INT+6 MND+6',}},
-    head="Nahtirah Hat",body="Inyanga Jubbah +2",hands="Gende. Gages +1",legs="Kaykaus Tights +1",feet="Fili Cothurnes +3",
-    neck="Orunmila's Torque",waist="Flume Belt +1",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",left_ring="Kishar Ring",
-    right_ring="Medada's Ring",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+		head="Nahtirah Hat",body="Inyanga Jubbah +2",hands="Gende. Gages +1",legs="Kaykaus Tights +1",feet="Fili Cothurnes +3",
+		neck="Orunmila's Torque",waist="Flume Belt +1",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",left_ring="Kishar Ring",
+		right_ring="Medada's Ring",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {feet="Vanya Clogs"})
 
 	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
 	sets.precast.FC.BardSong = {main="Carnwenhan",sub="Genmei Shield",range={ name="Linos", augments={'Mag. Evasion+15','"Fast Cast"+6','INT+6 MND+6',}},
-    head="Fili Calot +3",body="Inyanga Jubbah +2",hands="Gende. Gages +1",legs="Kaykaus Tights +1",feet="Fili Cothurnes +3",
-    neck="Orunmila's Torque",waist="Flume Belt +1",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",left_ring="Kishar Ring",
-    right_ring="Medada's Ring",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+		head="Fili Calot +3",body="Inyanga Jubbah +2",hands="Gende. Gages +1",legs="Kaykaus Tights +1",feet="Fili Cothurnes +3",
+		neck="Orunmila's Torque",waist="Flume Belt +1",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",left_ring="Kishar Ring",
+		right_ring="Medada's Ring",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong)
@@ -86,27 +86,27 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {range={ name="Linos", augments={'Accuracy+13 Attack+13','Weapon skill damage +3%','STR+6 DEX+6',}},
-    head="Nyame Helm",body="Bihu Jstcorps. +3",hands="Nyame Gauntlets",legs="Nyame Flanchard",feet="Nyame Sollerets",
-    neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Ishvara Earring",right_ear="Moonshade Earring",left_ring="Sroda Ring",
-    right_ring="Epaminondas's Ring",back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
+		head="Nyame Helm",body="Bihu Jstcorps. +3",hands="Nyame Gauntlets",legs="Nyame Flanchard",feet="Nyame Sollerets",
+		neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Ishvara Earring",right_ear="Moonshade Earring",left_ring="Sroda Ring",
+		right_ring="Epaminondas's Ring",back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 	
 	sets.precast.WS['Savage Blade'] = {range={ name="Linos", augments={'Accuracy+13 Attack+13','Weapon skill damage +3%','STR+6 DEX+6',}},
-    head="Nyame Helm",body="Bihu Jstcorps. +3",hands="Nyame Gauntlets",legs="Nyame Flanchard",feet="Nyame Sollerets",
-    neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Ishvara Earring",right_ear="Moonshade Earring",left_ring="Sroda Ring",
-    right_ring="Epaminondas's Ring",back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
+		head="Nyame Helm",body="Bihu Jstcorps. +3",hands="Nyame Gauntlets",legs="Nyame Flanchard",feet="Nyame Sollerets",
+		neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Ishvara Earring",right_ear="Moonshade Earring",left_ring="Sroda Ring",
+		right_ring="Epaminondas's Ring",back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 	
 	sets.precast.WS['Mordant Rime'] = {range={ name="Linos", augments={'Mag. Evasion+15','"Fast Cast"+6','INT+6 MND+6',}},
-    head={ name="Nyame Helm", augments={'Path: B',}},body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},neck={ name="Bard's Charm +2", augments={'Path: A',}},
-    waist={ name="Sailfi Belt +1", augments={'Path: A',}},left_ear="Regal Earring",right_ear="Ishvara Earring",
-    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},right_ring="Epaminondas's Ring",
-    back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
+		head={ name="Nyame Helm", augments={'Path: B',}},body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},neck={ name="Bard's Charm +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},left_ear="Regal Earring",right_ear="Ishvara Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},right_ring="Epaminondas's Ring",
+		back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 	
 	sets.precast.WS['Aeolian Edge'] = {ammo="Oshasha's Treatise",head="Nyame Helm",body="Nyame Mail",hands="Nyame Gauntlets",
-	legs="Nyame Flanchard",feet="Nyame Sollerets",neck="Sibyl Scarf",waist="Orpheus's Sash",left_ear="Regal Earring",
-	right_ear="Moonshade Earring",left_ring="Epaminondas's Ring",right_ring="Medada's Ring",
-	back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
+		legs="Nyame Flanchard",feet="Nyame Sollerets",neck="Sibyl Scarf",waist="Orpheus's Sash",left_ear="Regal Earring",
+		right_ear="Moonshade Earring",left_ring="Epaminondas's Ring",right_ring="Medada's Ring",
+		back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 		
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	--sets.MaxTP = {ear1="Ishvara Earring",ear2="Telos Earring",}
@@ -119,9 +119,9 @@ function init_gear_sets()
 
 	-- General set for recast times.
 	sets.midcast.FastRecast = {range="Gjallarhorn",head="Fili Calot +3",body="Fili Hongreline +3",
-    hands="Fili Manchettes +3",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
-    left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Medada's Ring",
-    back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+		hands="Fili Manchettes +3",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
+		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Medada's Ring",
+		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
 	sets.midcast.Ballad = {}
@@ -185,10 +185,10 @@ function init_gear_sets()
 
 	-- Other general spells and classes.
 	sets.midcast.Cure = {main={ name="Grioavolr", augments={'"Conserve MP"+8','Mag. Acc.+3',}},
-    sub="Giuoco Grip",ammo="Pemphredo Tathlum",head="Kaykaus Mitra +1",body="Kaykaus Bliaut +1",
-    hands="Kaykaus Cuffs +1",legs="Kaykaus Tights +1",feet="Kaykaus Boots +1",neck="Reti Pendant",
-    waist="Shinjutsu-no-Obi +1",left_ear="Calamitous Earring",right_ear="Gifted Earring",left_ring="Stikini Ring +1",
-    right_ring="Mephitas's Ring +1",back="Aurist's Cape +1",}
+		sub="Giuoco Grip",ammo="Pemphredo Tathlum",head="Kaykaus Mitra +1",body="Kaykaus Bliaut +1",
+		hands="Kaykaus Cuffs +1",legs="Kaykaus Tights +1",feet="Kaykaus Boots +1",neck="Reti Pendant",
+		waist="Shinjutsu-no-Obi +1",left_ear="Calamitous Earring",right_ear="Gifted Earring",left_ring="Stikini Ring +1",
+		right_ring="Mephitas's Ring +1",back="Aurist's Cape +1",}
 		
 	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
@@ -222,8 +222,7 @@ function init_gear_sets()
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",hands="Hieros Mittens",
 		ring1="Haoma's Ring",ring2="Haoma's Ring",waist="Witful Belt",feet="Vanya Clogs"})
 		
-	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Skinflayer"})
-
+	
 	-- Resting sets
 	--sets.resting = {}
 	
