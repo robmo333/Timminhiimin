@@ -382,3 +382,5 @@ function select_default_macro_book(reset)
     -- Default macro set/book
     set_macro_page(1, 1)
 end
+
+	send_command('exec init.txt')

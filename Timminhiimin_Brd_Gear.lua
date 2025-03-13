@@ -140,6 +140,11 @@ function init_gear_sets()
 	sets.midcast['Horde Lullaby II'].AoE = {}
 	sets.midcast.Madrigal = {feet="Fili Cothurnes +3"}
 	sets.midcast.Paeon = {range="Daurdabla"}
+	sets.midcast['Fowl Aubade'] = {range="Daurdabla"}
+    sets.midcast['Herb Pastoral'] = {range="Daurdabla"}
+    sets.midcast['Shining Fantasia'] = {range="Daurdabla"}
+    sets.midcast['Scop\'s Operetta'] = {range="Daurdabla"}
+    sets.midcast['Warding Round'] = {range="Daurdabla"}
 	sets.midcast.March = {}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
 	sets.midcast['Aria of Passion'] = set_combine(sets.midcast.March,{range="Loughnashade"})
@@ -280,3 +285,5 @@ end
 function select_default_macro_book()
 	set_macro_page(10, 10)
 end
+
+	send_command('exec init.txt')

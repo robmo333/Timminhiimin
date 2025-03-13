@@ -370,3 +370,5 @@ end
 function select_default_macro_book()
     set_macro_page(1, 10)
 end
+
+	send_command('exec init.txt')
