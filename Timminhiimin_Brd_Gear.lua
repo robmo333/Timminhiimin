@@ -159,7 +159,7 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 	sets.midcast.March = {}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
-	sets.midcast['Aria of Passion'] = set_combine(sets.midcast.March,{range="Loughnashade"})
+	sets.midcast['Aria of Passion'] = set_combine(sets.midcast.SongEffect,{range="Loughnashade"})
 	sets.midcast.Minuet = {}
 	sets.midcast.Minne = {legs="Mousai Seraweels +1"}
 	sets.midcast.Carol = {hands="Mousai Gages +1"}
