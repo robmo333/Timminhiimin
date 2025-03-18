@@ -157,7 +157,10 @@ function init_gear_sets()
     sets.midcast['Warding Round'] = {range="Daurdabla",head="Null Masque",body="Inyanga Jubbah +2",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
 		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Dark Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
-	sets.midcast.March = {}
+	sets.midcast.March = {{main="Carnwenhan",sub="Genmei Shield",range="Gjallarhorn",head="Fili Calot +3",body="Fili Hongreline +3",
+		hands="Fili Manchettes +3",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
+		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Kishar Ring",
+		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
 	sets.midcast['Aria of Passion'] = set_combine(sets.midcast.SongEffect,{range="Loughnashade"})
 	sets.midcast.Minuet = {}
