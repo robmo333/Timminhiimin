@@ -64,12 +64,12 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {ammo="Sapience Orb",head={ name="Merlinic Hood", augments={'Mag. Acc.+14','"Fast Cast"+7','CHR+7','"Mag.Atk.Bns."+12',}},
-    body={ name="Merlinic Jubbah", augments={'Mag. Acc.+13','"Fast Cast"+7','CHR+7',}},
-    hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+12','"Mag.Atk.Bns."+1',}},
-    legs="Agwu's Slops",feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+20','"Fast Cast"+7',}},
-    neck="Orunmila's Torque",waist={ name="Shinjutsu-no-Obi +1", augments={'Path: A',}},
-    left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",left_ring="Medada's Ring",
-    right_ring="Kishar Ring",back={ name="Taranus's Cape", augments={'MP+60','Eva.+8 /Mag. Eva.+8','"Fast Cast"+10','Phys. dmg. taken-10%',}}}
+		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+13','"Fast Cast"+7','CHR+7',}},
+		hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+12','"Mag.Atk.Bns."+1',}},
+		legs="Agwu's Slops",feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+20','"Fast Cast"+7',}},
+		neck="Orunmila's Torque",waist={ name="Shinjutsu-no-Obi +1", augments={'Path: A',}},
+		left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",left_ring="Medada's Ring",
+		right_ring="Kishar Ring",back={ name="Taranus's Cape", augments={'MP+60','Eva.+8 /Mag. Eva.+8','"Fast Cast"+10','Phys. dmg. taken-10%',}}}
 		
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -83,10 +83,7 @@ function init_gear_sets()
 	
 	sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
-	sets.precast.FC.Death = {main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Impatiens",
-        head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchanter Earring +1",ear2="Loquacious Earring",
-        body=gear.merlinic_nuke_body,hands="Volte Gloves",ring1="Mephitas's Ring +1",ring2="Lebeche Ring",
-        back="Perimede Cape",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
+	sets.precast.FC.Death = sets.precast.FC
 		
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
@@ -150,14 +147,11 @@ function init_gear_sets()
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {legs="Shedir Seraweels"})
 
     sets.midcast['Enfeebling Magic'] = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Befouled Crown",neck="Erra Pendant",ear1="Digni. Earring",ear2="Regal Earring",
+        head="Befouled Crown",neck="Src. Stole +2",ear1="Malignance Earring",ear2="Wicce Earring +2",
         body="Vanya Robe",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
-        back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Uk'uxkaj Boots"}
+        back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
-    sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Befouled Crown",neck="Erra Pendant",ear1="Digni. Earring",ear2="Regal Earring",
-        body="Vanya Robe",hands="Regal Cuffs",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-        back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Skaoi Boots"}
+    sets.midcast['Enfeebling Magic'].Resistant = sets.midcast['Enfeebling Magic']
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1",waist="Acuity Belt +1"})
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1",waist="Acuity Belt +1"})
@@ -182,9 +176,9 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_aspir_feet}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
-        body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Evanescence Ring",ring2="Archon Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Merlinic Shalwar",feet=gear.merlinic_aspir_feet}
+        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Wicce Earring +2",
+        body="Shango Robe",hands="Arch. Gloves +3",ring1="Evanescence Ring",ring2="Archon Ring",
+        back="Aurist's Cape +1",waist="Fucho-no-obi",legs="Agwu's Slops",feet="Agwu Pigaches"}
     
     sets.midcast.Aspir = sets.midcast.Drain
 	
@@ -270,16 +264,13 @@ function init_gear_sets()
     -- Idle sets
     
     -- Normal refresh idle set
-    sets.idle = {main="Mpaca's Staff",sub="Enki Strap",ammo="Staunch Tathlum +1",head="Wicce Petasos +3",body="Wicce Coat +3",
-    hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Carrier's Sash",left_ear="Lugalbanda Earring",right_ear="Etiolation Earring",left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",back={ name="Taranus's Cape", augments={'MP+60','Eva.+8 /Mag. Eva.+8','"Fast Cast"+10','Phys. dmg. taken-10%',}}}
+    sets.idle = {ammo="Staunch Tathlum +1",head="Null Masque",body="Shamash Robe",hands="Wicce Gloves +3",legs="Assid. Pants +1",
+		feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+18','Pet: STR+4','"Refresh"+1','Accuracy+6 Attack+6',}},
+		neck="Null Loop",waist="Shinjutsu-no-Obi +1",left_ear="Gifted Earring",right_ear="Wicce Earring +2",left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",back={ name="Taranus's Cape", augments={'MP+60','Eva.+8 /Mag. Eva.+8','"Fast Cast"+10','Phys. dmg. taken-10%',}}}
 
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
-    sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
-        head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
-        body="Vrikodara Jupon",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Shadow Mantle",waist="Flax Sash",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
+    sets.idle.PDT = sets.idle
 		
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {feet="Hippo. Socks +1"})
