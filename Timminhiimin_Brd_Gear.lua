@@ -182,7 +182,7 @@ function init_gear_sets()
 	sets.midcast.Mazurka = set_combine(sets.midcast.SongEffect,{range="Marsyas"})
 	sets.midcast.Mambo = set_combine(sets.midcast.SongEffect,{feets="Mousai Crackows +1"})
 	sets.midcast.Etude = set_combine(sets.midcast.SongEffect,{head="Mousai Turban +1"})
-	sets.midcast.Threnody = set_combine(sets.midcast.SongEffect,{body="Mousai Manteel +1"})
+	sets.midcast.Threnody = set_combine(sets.midcast.SongDebuff,{body="Mousai Manteel +1"})
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Carnwenhan",sub="Genmei Shield",range="Gjallarhorn",head="Fili Calot +3",body="Fili Hongreline +3",
