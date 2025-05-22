@@ -95,13 +95,11 @@ function init_gear_sets()
 		neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Ishvara Earring",right_ear="Moonshade Earring",left_ring="Sroda Ring",
 		right_ring="Epaminondas's Ring",back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
 	
-	sets.precast.WS['Mordant Rime'] = {range={ name="Linos", augments={'Mag. Evasion+15','"Fast Cast"+6','INT+6 MND+6',}},
-		head={ name="Nyame Helm", augments={'Path: B',}},body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},neck={ name="Bard's Charm +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},left_ear="Regal Earring",right_ear="Ishvara Earring",
-		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},right_ring="Epaminondas's Ring",
-		back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
+	sets.precast.WS['Mordant Rime'] = {range={ name="Linos", augments={'Accuracy+13 Attack+13','Weapon skill damage +3%','CHR+8',}},
+		head="Nyame Helm",body="Bihu Jstcorps. +3",hands="Nyame Gauntlets",legs="Nyame Flanchard",feet="Nyame Sollerets",
+		neck="Bard's Charm +2",waist="Sailfi Belt +1",left_ear="Regal Earring",right_ear="Ishvara Earring",
+		left_ring="Metamor. Ring +1",right_ring="Epaminondas's Ring",
+		back={ name="Intarabus's Cape", augments={'CHR+20','Accuracy+20 Attack+20','CHR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}}
 	
 	sets.precast.WS['Aeolian Edge'] = {ammo="Oshasha's Treatise",head="Nyame Helm",body="Nyame Mail",hands="Nyame Gauntlets",
 		legs="Nyame Flanchard",feet="Nyame Sollerets",neck="Sibyl Scarf",waist="Orpheus's Sash",left_ear="Regal Earring",
@@ -124,24 +122,31 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
-	sets.midcast.Ballad = {}
-	sets.midcast.Lullaby = {}
-	sets.midcast['Horde Lullaby'] = {main="Carnwenhan",sub="Ammurapi Shield",range="Marsyas",head="Brioso Roundlet +2",body="Fili Hongreline +3",hands="Brioso Cuffs +2",legs="Inyanga Shalwar +2",
+	sets.midcast.Ballad = {main="Carnwenhan",sub="Genmei Shield",range="Miracle Cheer",head="Fili Calot +3",body="Fili Hongreline +3",
+		hands="Fili Manchettes +3",legs="Fili Rhingrave +3",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
+		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Kishar Ring",
+		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+	
+	sets.midcast.Lullaby = {main="Carnwenhan",sub="Ammurapi Shield",range="Marsyas",head="Brioso Roundlet +3",body="Fili Hongreline +3",hands="Brioso Cuffs +3",legs="Inyanga Shalwar +2",
 		feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",right_ear="Regal Earring",left_ring="Stikini Ring +1",
-		right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+		right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}}
+	sets.midcast['Horde Lullaby'] = {main="Carnwenhan",sub="Ammurapi Shield",range="Marsyas",head="Brioso Roundlet +3",body="Fili Hongreline +3",hands="Brioso Cuffs +3",legs="Inyanga Shalwar +2",
+		feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",right_ear="Regal Earring",left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}}
 	sets.midcast['Horde Lullaby'].Resistant = {}
-	sets.midcast['Horde Lullaby'].AoE = {main="Carnwenhan",sub="Ammurapi Shield",range="Blurred Harp +1",head="Brioso Roundlet +2",body="Fili Hongreline +3",hands="Brioso Cuffs +2",legs="Inyanga Shalwar +2",
+	sets.midcast['Horde Lullaby'].AoE = {main="Carnwenhan",sub="Ammurapi Shield",range="Blurred Harp +1",head="Brioso Roundlet +3",body="Fili Hongreline +3",hands="Brioso Cuffs +3",legs="Inyanga Shalwar +2",
 		feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",right_ear="Regal Earring",left_ring="Stikini Ring +1",
-		right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
-	sets.midcast['Horde Lullaby II'] = {main="Carnwenhan",sub="Ammurapi Shield",range="Daurdabla",head="Brioso Roundlet +2",body="Brioso Justau. +2",hands="Inyanga Dastanas +2",
-		legs="Inyanga Shalwar +2",feet="Bihu Slippers +3",neck="Mnbw. Whistle +1",waist="Harfner's Sash",left_ear="Gersemi Earring",right_ear="Darkside Earring",
-		left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+		right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}}
+	sets.midcast['Horde Lullaby II'] = {main="Carnwenhan",sub="Ammurapi Shield",range="Daurdabla",head="Brioso Roundlet +3",body="Fili Hongreline +3",hands="Inyanga Dastanas +2",
+		legs="Inyanga Shalwar +2",feet="Bihu Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Gersemi Earring",right_ear="Regal Earring",
+		left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}}
 	sets.midcast['Horde Lullaby II'].Resistant = {}
 	sets.midcast['Horde Lullaby II'].AoE = {}
-	sets.midcast.Madrigal = {feet="Fili Cothurnes +3"}
-	sets.midcast.Paeon = {range="Daurdabla",head="Null Masque",body="Inyanga Jubbah +2",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
-		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Dark Ring",
-		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+	
+	sets.midcast.Madrigal = set_combine(sets.midcast.SongEffect,{feet="Fili Cothurnes +3"})
+	
+	sets.midcast.Paeon = set_combine(sets.midcast.SongEffect,{head="Brioso Roundlet +3"})
+	
 	sets.midcast['Fowl Aubade'] = {range="Daurdabla",head="Null Masque",body="Inyanga Jubbah +2",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
 		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Dark Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
@@ -157,21 +162,27 @@ function init_gear_sets()
     sets.midcast['Warding Round'] = {range="Daurdabla",head="Null Masque",body="Inyanga Jubbah +2",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
 		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Dark Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+	
 	sets.midcast.March = {{main="Carnwenhan",sub="Genmei Shield",range="Gjallarhorn",head="Fili Calot +3",body="Fili Hongreline +3",
 		hands="Fili Manchettes +3",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
 		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Kishar Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
 	sets.midcast['Aria of Passion'] = set_combine(sets.midcast.SongEffect,{range="Loughnashade"})
+	
 	sets.midcast.Minuet = {}
-	sets.midcast.Minne = {legs="Mousai Seraweels +1"}
-	sets.midcast.Carol = {hands="Mousai Gages +1"}
-	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +3"} --feet="Fili Cothurnes +3" Brioso Slippers still provides more Duration
+	
+	sets.midcast.Minne = {main="Carnwenhan",sub="Genmei Shield",range="Miracle Cheer",head="Fili Calot +3",body="Fili Hongreline +3",
+		hands="Fili Manchettes +3",legs="Mousai Seraweels +1",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
+		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Defending Ring",right_ring="Kishar Ring",
+		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+	sets.midcast.Carol = set_combine(sets.midcast.SongEffect,{hands="Mousai Gages +1"})
+	sets.midcast["Sentinel's Scherzo"] = set_combine(sets.midcast.SongEffect,{feet="Fili Cothurnes +3"}) --feet="Fili Cothurnes +3" Brioso Slippers still provides more Duration
 	sets.midcast['Magic Finale'] = {}
-	sets.midcast.Mazurka = {range="Marsyas"}
-	sets.midcast.Mambo = {feets="Mousai Crackows +1"}
-	sets.midcast.Etude = {head="Mousai Turban +1"}
-	sets.midcast.Threnody = {body="Mousai Manteel +1"}
+	sets.midcast.Mazurka = set_combine(sets.midcast.SongEffect,{range="Marsyas"})
+	sets.midcast.Mambo = set_combine(sets.midcast.SongEffect,{feets="Mousai Crackows +1"})
+	sets.midcast.Etude = set_combine(sets.midcast.SongEffect,{head="Mousai Turban +1"})
+	sets.midcast.Threnody = set_combine(sets.midcast.SongEffect,{body="Mousai Manteel +1"})
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Carnwenhan",sub="Genmei Shield",range="Gjallarhorn",head="Fili Calot +3",body="Fili Hongreline +3",
@@ -180,16 +191,16 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	-- For song defbuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {main="Carnwenhan",sub="Genmei Shield",range="Marsyas",head="Brioso Roundlet +2",body="Brioso Justau. +2",hands="Brioso Cuffs +2",
-		legs="Brioso Cannions +2",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",
-		right_ear="Regal Earring",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
-		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+	sets.midcast.SongDebuff = {main="Carnwenhan",sub="Ammurapi Shield",range="Marsyas",head="Brioso Roundlet +3",body="Fili Hongreline +3",hands="Fili Manchettes +3",
+		legs="Fili Rhingrave +3",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",
+		right_ear="Fili Earring +1",left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}}
 
 	-- For song defbuffs (accuracy primary, duration secondary)
-	sets.midcast.SongDebuff.Resistant = {main="Carnwenhan",sub="Genmei Shield",range="Marsyas",head="Brioso Roundlet +2",body="Brioso Justau. +2",hands="Brioso Cuffs +2",
-		legs="Brioso Cannions +2",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",
-		right_ear="Regal Earring",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
-		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
+	sets.midcast.SongDebuff.Resistant = {main="Carnwenhan",sub="Ammurapi Shield",range="Marsyas",head="Brioso Roundlet +3",body="Fili Hongreline +3",hands="Fili Manchettes +3",
+		legs="Fili Rhingrave +3",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Acuity Belt +1",left_ear="Digni. Earring",
+		right_ear="Fili Earring +1",left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {main="Carnwenhan",sub="Genmei Shield",range="Gjallarhorn",head="Fili Calot +3",body="Fili Hongreline +3",
@@ -214,12 +225,13 @@ function init_gear_sets()
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
 		
-	sets.midcast['Enhancing Magic'] = {main="Serenity",sub="Fulcio Grip",ammo="Hasty Pinion +1",
-		head="Telchine Cap",neck="Voltsurge Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Intarabus's Cape",waist="Witful Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
+	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Giuoco Grip",ammo="Pemphredo Tathlum",head="Null Masque",
+		body="Telchine Chas.",hands="Inyan. Dastanas +2",legs="Shedir Seraweels",feet="Kaykaus Boots +1",
+		neck="Incanter's Torque",waist="Olympus Sash",left_ear="Mimir Earring",right_ear="Andoaa Earring",
+		left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 		
-	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
+	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash"})
 
 	sets.midcast.Dispel = {ammo="Pemphredo Tathlum",head="Fili Calot +3",
 		body="Bihu Jstcorps. +3",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",feet="Fili Cothurnes +3",
@@ -286,13 +298,11 @@ function init_gear_sets()
 		head="Aya. Zucchetto +2",body="Ayanmo Corazza +2",hands="Bunzi's Gloves",legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet="Volte Spats",neck="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Cessance Earring",
 		left_ring="Moonlight Ring",right_ring="Moonlight Ring",
-		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}}
-	sets.engaged.Acc = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
-		head="Aya. Zucchetto +2",body="Ayanmo Corazza +2",hands="Bunzi's Gloves",
-		legs="Aya. Cosciales +2",feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Eabani Earring",
-		left_ring="Moonlight Ring",right_ring="Moonlight Ring",
-		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}}
+		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
+	sets.engaged.Acc = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},head="Aya. Zucchetto +2",
+		body="Inyanga Jubbah +2",hands="Bunzi's Gloves",legs="Nyame Flanchard",feet="Nyame Sollerets",neck="Bard's Charm +2",
+		waist="Sailfi Belt +1",left_ear="Eabani Earring",right_ear="Suppanomimi",left_ring="Moonlight Ring",right_ring="Moonlight Ring",
+		back="Null Shawl",}
 
 end
 
