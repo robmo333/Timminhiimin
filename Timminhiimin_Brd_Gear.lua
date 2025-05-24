@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('None','Carn','CarnDW','DualWeapons','Swords','NukeWeapons', 'Trails')
+	state.Weapons:options('Swords','None','Carn','CarnDW','Trails')
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Daurdabla'
@@ -35,9 +35,7 @@ function init_gear_sets()
 	--sets.weapons.Kali = {main="Kali",sub="Genmei Shield"}
 	sets.weapons.Carn = {main="Carnwenhan",sub="Genmei Shield"}
 	sets.weapons.CarnDW = {main="Carnwenhan",sub="Ternion Dagger +1"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Ternion Dagger +1"}
 	sets.weapons.Swords = {main="Naegling",sub="Centovente"}
-	sets.weapons.NukeWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Trails = {main="Kartika",sub="Ternion Dagger +1"}
 	-- Precast Sets
 
