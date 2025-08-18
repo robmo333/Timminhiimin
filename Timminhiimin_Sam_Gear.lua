@@ -33,11 +33,11 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +1",back=gear.ws_jse_back}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3",back=gear.ws_jse_back}
     sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +1"}
-	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
-	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
+	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +3"}
+	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +3"}
 	
     sets.precast.Step = {}
     sets.precast.JA['Violent Flourish'] = {}
@@ -181,9 +181,9 @@ function init_gear_sets()
     
     -- Normal melee group
     -- Delay 450 GK, 25 Save TP => 65 Store TP for a 5-hit (25 Store TP in gear)
-    sets.engaged = {ammo="Aurgelmir Orb +1",head="Flam. Zucchetto +2",body={ name="Valorous Mail", augments={'Accuracy+16 Attack+16','"Store TP"+7','Accuracy+7',}},
+    sets.engaged = {ammo="Aurgelmir Orb +1",head="Kasuga Kabuto +3",body="Kasuga Domaru +3",
 		hands="Tatena. Gote +1",legs="Tatena. Haidate +1",feet="Ryuo Sune-Ate +1",neck="Moonlight Nodowa",waist="Sweordfaetels +1",
-		left_ear="Dedition Earring",right_ear="Kasuga Earring +2",left_ring="Niqmaddu Ring",right_ring="Chirich Ring +1",back=gear.stp_jse_back}
+		left_ear="Dedition Earring",right_ear="Kasuga Earring +2",left_ring="Defending Ring",right_ring="Niqmaddu Ring",back=gear.stp_jse_back}
     	
  
    
@@ -199,24 +199,24 @@ function init_gear_sets()
 	sets.buff.Sleep = {neck="Vim Torque +1"}
 	sets.buff.Hasso = {hands="Wakido Kote +3"}
 	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
-    sets.buff.Sekkanoki = {hands="Kasuga Kote +1"}
-    sets.buff.Sengikori = {feet="Kas. Sune-Ate +1"}
-    sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate +1"}
+    sets.buff.Sekkanoki = {hands="Kasuga Kote +3"}
+    sets.buff.Sengikori = {feet="Kas. Sune-Ate +3"}
+    sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate +3"}
 end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'DNC' then
-        set_macro_page(3, 1)
+        set_macro_page(17, 1)
     elseif player.sub_job == 'WAR' then
-        set_macro_page(1, 1)
+        set_macro_page(17, 1)
     elseif player.sub_job == 'NIN' then
-        set_macro_page(10, 1)
+        set_macro_page(17, 1)
     elseif player.sub_job == 'THF' then
-        set_macro_page(2, 1)
+        set_macro_page(17, 1)
     else
-        set_macro_page(1, 1)
+        set_macro_page(17, 1)
     end
 end
 
