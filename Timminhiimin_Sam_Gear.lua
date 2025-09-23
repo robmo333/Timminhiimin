@@ -8,7 +8,7 @@ function user_setup()
 	state.MagicalDefenseMode:options('MDT','MDTReraise')
 	state.ResistDefenseMode:options('MEVA')
     state.IdleMode:options('Normal', 'Reraise')
-	state.Weapons:options('Dojikiri','ProcWeapon','Bow','Polearm')
+	state.Weapons:options('Dojikiri','Kusanagi','Polearm')
 
 	gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
 	gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
@@ -206,8 +206,7 @@ function init_gear_sets()
    
 	-- Weapons sets
 	sets.weapons.Dojikiri = {main="Dojikiri Yasutsuna",sub="Utu Grip"}
-	sets.weapons.ProcWeapon = {main="Norifusa +1",sub="Bloodrain Strap"}
-	sets.weapons.Bow = {main="Norifusa +1",sub="Utu Grip",range="Cibitshavore",ammo="Eminent Arrow"}
+	sets.weapons.Kusanagi = {main="Kusanagi",sub="Utu Grip"}
 	sets.weapons.Polearm = {main="Shining One",sub="Utu Grip"}
 	
 	-- Buff sets
