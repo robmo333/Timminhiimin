@@ -358,24 +358,24 @@ function init_gear_sets()
 	sets.idle = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Hashishin Tayt +3",feet="Malignance Boots",
 		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Infused Earring",left_ring="Vengeful Ring",
-		right_ring="Defending Ring",back="Null Shawl"}
+		right_ring="Murky Ring",back="Null Shawl"}
 
 	sets.idle.PDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Hashishin Tayt +3",feet="Malignance Boots",
 		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Infused Earring",left_ring="Vengeful Ring",
-		right_ring="Defending Ring",back="Null Shawl"}
+		right_ring="Murky Ring",back="Null Shawl"}
 
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Hashishin Tayt +3",feet="Malignance Boots",
 		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Ethereal Earring",left_ring="Vengeful Ring",
-		right_ring="Defending Ring",back="Null Shawl"}
+		right_ring="Murky Ring",back="Null Shawl"}
 
 	sets.defense.MDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Hashishin Tayt +3",feet="Malignance Boots",
 		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Ethereal Earring",left_ring="Vengeful Ring",
-		right_ring="Defending Ring",back="Null Shawl"}
+		right_ring="Murky Ring",back="Null Shawl"}
 
     sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Amalric Coif +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -408,12 +408,12 @@ function init_gear_sets()
 	sets.engaged = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
     legs="Malignance Tights",feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Telos Earring",
-    left_ring="Epona's Ring",right_ring="Defending Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
+    left_ring="Epona's Ring",right_ring="Murky Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
 
 	sets.engaged.AM = {ammo="Aurgelmir Orb +1",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
     legs="Malignance Tights",feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Telos Earring",
-    left_ring="Epona's Ring",right_ring="Defending Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
+    left_ring="Epona's Ring",right_ring="Murky Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
 
 	sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},

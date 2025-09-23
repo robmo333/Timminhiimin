@@ -251,18 +251,18 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Chatoyant Staff",ammo="Staunch Tathlum",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
+        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Murky Ring",ring2="Sheltered Ring",
         back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
     
     -- Idle sets
     sets.idle = {main="Nirvana",sub="Oneiros Grip",ammo="Staunch Tathlum +1",
         head="Convoker's Horn +3",neck="Smn. Collar +2",ear1="Etiolation Earring",ear2="Infused Earring",
-        body="Apogee Dalmatica +1",hands="Asteria Mitts +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Apogee Dalmatica +1",hands="Asteria Mitts +1",ring1="Murky Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
 
     sets.idle.PDT = {main="Nirvana",sub="Alber Strap",ammo="Staunch Tathlum +1",
         head="Convoker's Horn +3",neck="Smn. Collar +2",ear1="Etiolation Earring",ear2="Genmei Earring",
-        body="Vrikodara Jupon",hands="Asteria Mitts +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands="Asteria Mitts +1",ring1="Murky Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Baayami Sabots +1"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
@@ -294,7 +294,7 @@ function init_gear_sets()
 		
     sets.idle.PDT.Avatar = {main="Terra's Staff",sub="Oneiros Grip",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Smn. Collar +2",ear1="Etiolation Earring",ear2="Evans Earring",
-        body="Apogee Dalmatica +1",hands="Asteria Mitts +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Apogee Dalmatica +1",hands="Asteria Mitts +1",ring1="Murky Ring",ring2="Dark Ring",
         back=gear.phys_jse_back,waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +2"}
 
     sets.idle.Spirit = {main="Gridarvor",sub="Oneiros Grip",ammo="Sancus Sachet +1",
@@ -304,7 +304,7 @@ function init_gear_sets()
 		
     sets.idle.PDT.Spirit = {main="Terra's Staff",sub="Oneiros Grip",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
-        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Murky Ring",ring2="Dark Ring",
         back=gear.phys_jse_back,waist="Lucidity Sash",legs="Assid. Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {neck="Chrys. Torque"})
@@ -334,12 +334,12 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",ammo="Sancus Sachet +1",
         head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Enmerkar Earring",
-        body="Vrikodara Jupon",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands="Hagondes Cuffs +1",ring1="Murky Ring",ring2="Dark Ring",
         back="Umbra Cape",waist="Regal Belt",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 
     sets.defense.MDT = {main="Terra's Staff",sub="Umbra Strap",ammo="Sancus Sachet +1",
         head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Lugalbanda Earring",
-        body="Vrikodara Jupon",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands="Hagondes Cuffs +1",ring1="Murky Ring",ring2="Dark Ring",
         back="Umbra Cape",waist="Regal Belt",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 
     sets.defense.MEVA = {main="Terra's Staff",sub="Enki Strap",ammo="Sancus Sachet +1",

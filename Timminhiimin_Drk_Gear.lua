@@ -215,12 +215,12 @@ function init_gear_sets()
            
     sets.idle = {ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Moonlight Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Moonlight Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sakpata's Leggings"}
 		
     sets.idle.PDT = {ammo="Staunch Tathlum +1",
 		head="Sulevia's Mask +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Sulevia's Platemail +2",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Moonlight Ring +1",
+		body="Sulevia's Platemail +2",hands="Sulev. Gauntlets +2",ring1="Murky Ring",ring2="Moonlight Ring +1",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})

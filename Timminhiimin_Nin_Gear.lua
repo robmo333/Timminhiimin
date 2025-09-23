@@ -354,34 +354,34 @@ function init_gear_sets()
     sets.idle = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
     legs="Malignance Tights",feet="Malignance Boots",
     neck="Loricate Torque +1",waist="Platinum Moogle Belt",left_ear="Arete del Luna +1",right_ear="Eabani Earring",
-    left_ring="Defending Ring",right_ring="Archon Ring",back="Moonlight Cape",}
+    left_ring="Murky Ring",right_ring="Archon Ring",back="Moonlight Cape",}
 
     sets.idle.PDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
-        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Murky Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Flume Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 		
     sets.idle.Weak = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
-        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Murky Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Flume Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
     
     -- Defense sets
     sets.defense.Evasion = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Apate Ring",
+        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Murky Ring",ring2="Apate Ring",
         back="Andartia's Mantle",waist="Shetal Stone",legs="Nahtirah Trousers",feet=gear.herculean_dt_feet}
 
     sets.defense.PDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
-        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Murky Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Flume Belt +1",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 
     sets.defense.MDT = {ammo="Togakushi Shuriken",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Shadow Ring",
+        body="Emet Harness +1",hands=gear.herculean_dt_hands,ring1="Murky Ring",ring2="Shadow Ring",
         back="Engulfer Cape +1",waist="Engraved Belt",legs=gear.herculean_dt_legs,feet="Ahosi Leggings"}
 		
 	sets.defense.MEVA = {ammo="Yamarang",
@@ -408,13 +408,13 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {ammo="Date Shuriken",head="Ryuo Somen +1",body="Malignance Tabard",hands="Malignance Gloves",legs="Mochi. Hakama +3",feet="Malignance Boots",neck="Ninja Nodowa +2",
-		waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Dedition Earring",left_ring="Defending Ring",right_ring="Moonlight Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
+		waist="Reiki Yotai",left_ear="Suppanomimi",right_ear="Dedition Earring",left_ring="Murky Ring",right_ring="Moonlight Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
     sets.engaged.SomeAcc = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Malignance Tights",feet="Malignance Boots",
 		neck="Ninja Nodowa +2",waist="Sailfi Belt +1",left_ear="Telos Earring",right_ear="Dedition. Earring",left_ring="Epona's Ring",
 		right_ring="Gere Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
     sets.engaged.Full = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",feet="Malignance Boots",
-		neck="Ninja Nodowa +2",waist="Windbuffet Belt +1",left_ear="Dedition Earring",right_ear="Brutal Earring",left_ring="Defending Ring",right_ring="Gere Ring",
+		neck="Ninja Nodowa +2",waist="Windbuffet Belt +1",left_ear="Dedition Earring",right_ear="Brutal Earring",left_ring="Murky Ring",right_ring="Gere Ring",
 		back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
 	sets.engaged.Fodder = {ammo="Date Shuriken",head="Malignance Chapeau",body="Malignance Tabard",hands="Adhemar Wrist. +1",legs="Samnuha Tights",feet="Malignance Boots",neck="Ninja Nodowa +2",waist="Sailfi Belt +1",
 		left_ear="Telos Earring",right_ear="Dedition Earring",left_ring="Epona's Ring",right_ring="Gere Ring",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
