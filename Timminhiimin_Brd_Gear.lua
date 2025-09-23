@@ -292,9 +292,9 @@ function init_gear_sets()
 	--sets.resting = {}
 	
 	sets.idle = {range={ name="Linos", augments={'Mag. Evasion+15','"Fast Cast"+6','INT+6 MND+6',}},
-		head="Null Masque",body="Inyanga Jubbah +2",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
+		head="Null Masque",body="Nyame Mail",hands="Fili Manchettes +3",legs="Fili Rhingrave +3",
 		feet="Fili Cothurnes +3",neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",
-		right_ear="Fili Earring +2",left_ring="Murky Ring",right_ring="Dark Ring",
+		right_ear="Fili Earring +2",left_ring="Murky Ring",right_ring="Archon Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
