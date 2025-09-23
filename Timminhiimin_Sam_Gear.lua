@@ -60,13 +60,7 @@ function init_gear_sets()
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}}
    
-	
-	sets.precast.WS.Proc = {ammo="Hasty Pinion +1",
-        head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Zennaroi Earring",ear2="Telos Earring",
-        body="Tartarus Platemail",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.stp_jse_back,waist="Olseni Belt",legs="Wakido Haidate +3",feet="Flam. Gambieras +2"}
-	
-    -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
+		    -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Tachi: Fudo'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
