@@ -56,12 +56,12 @@ function init_gear_sets()
 	   
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {{ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
+    sets.precast.WS = {{ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}}
    
 		    -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Tachi: Fudo'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
+    sets.precast.WS['Tachi: Fudo'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
     	
@@ -73,15 +73,15 @@ function init_gear_sets()
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Lugra Earring +1",right_ear="Thrud Earring",
 		left_ring="Sroda Ring",right_ring="Niqmaddu Ring",back=gear.ws_jse_back}
     
-    sets.precast.WS['Tachi: Kasha'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
+    sets.precast.WS['Tachi: Kasha'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
     
-    sets.precast.WS['Tachi: Gekko'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
+    sets.precast.WS['Tachi: Gekko'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
     
-    sets.precast.WS['Tachi: Yukikaze'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
+    sets.precast.WS['Tachi: Yukikaze'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
     
@@ -104,7 +104,7 @@ function init_gear_sets()
 	
 	sets.precast.WS['Apex Arrow'] = {}
 	
-	sets.precast.WS['Impulse Drive'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +3",
+	sets.precast.WS['Impulse Drive'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
 		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
 		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
 		
@@ -114,7 +114,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Loess Barbuta +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Tartarus Platemail",hands="Leyline Gloves",ring1="Murky Ring",ring2="Prolix Ring",
-        back="Moonlight Cape",waist="Tempus Fugit",legs="Wakido Haidate +3",feet="Amm Greaves"}
+        back="Moonlight Cape",waist="Tempus Fugit",legs="Wakido Haidate +4",feet="Amm Greaves"}
 		
     -- Specific spells
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
@@ -124,12 +124,12 @@ function init_gear_sets()
     sets.midcast.RA = {
         head="Flam. Zucchetto +2",neck="Ocachi Gorget",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Kyujutsugi",hands="Buremte Gloves",ring1="Ilabrat Ring",ring2="Regal Ring",
-        back="Buquwik Cape",waist="Flax Sash",legs="Wakido Haidate +3",feet="Waki. Sune-Ate +1"}
+        back="Buquwik Cape",waist="Flax Sash",legs="Wakido Haidate +4",feet="Waki. Sune-Ate +1"}
 
     sets.midcast.RA.Acc = {
         head="Flam. Zucchetto +2",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Kyujutsugi",hands="Buremte Gloves",ring1="Ilabrat Ring",ring2="Regal Ring",
-        back="Buquwik Cape",waist="Flax Sash",legs="Wakido Haidate +3",feet="Waki. Sune-Ate +1"}
+        back="Buquwik Cape",waist="Flax Sash",legs="Wakido Haidate +4",feet="Waki. Sune-Ate +1"}
 
     
     -- Sets to return to when not performing an action.
@@ -164,21 +164,21 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Murky Ring",ring2="Patricius Ring",
-        back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Amm Greaves"}
+        back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +4",feet="Amm Greaves"}
 
     sets.defense.PDTReraise = set_combine(sets.defense.PDT, sets.Reraise)
 		
     sets.defense.MDT = {ammo="Staunch Tathlum",
         head="Loess Barbuta +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Murky Ring",ring2="Shadow Ring",
-        back="Moonlight Cape",waist="Flax Sash",legs="Wakido Haidate +3",feet="Amm Greaves"}
+        back="Moonlight Cape",waist="Flax Sash",legs="Wakido Haidate +4",feet="Amm Greaves"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
 	
     sets.defense.MEVA = {ammo="Staunch Tathlum",
         head="Loess Barbuta +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body="Tartarus Platemail",hands="Leyline Gloves",ring1="Vengeful Ring",Ring2="Purity Ring",
-        back="Moonlight Cape",waist="Flax Sash",legs="Wakido Haidate +3",feet="Amm Greaves"}
+        back="Moonlight Cape",waist="Flax Sash",legs="Wakido Haidate +4",feet="Amm Greaves"}
 
     -- Engaged sets
 
