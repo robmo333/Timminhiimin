@@ -33,9 +33,9 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3",back=gear.ws_jse_back}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +4",hands="Sakonji Kote +4",back=gear.ws_jse_back}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +4"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +4"}
 	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +3"}
 	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +3"}
 	
@@ -163,14 +163,14 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Murky Ring",ring2="Patricius Ring",
+        body="Tartarus Platemail",hands="Wakido Kote +4",ring1="Murky Ring",ring2="Patricius Ring",
         back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +4",feet="Amm Greaves"}
 
     sets.defense.PDTReraise = set_combine(sets.defense.PDT, sets.Reraise)
 		
     sets.defense.MDT = {ammo="Staunch Tathlum",
         head="Loess Barbuta +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Tartarus Platemail",hands="Wakido Kote +3",ring1="Murky Ring",ring2="Shadow Ring",
+        body="Tartarus Platemail",hands="Wakido Kote +4",ring1="Murky Ring",ring2="Shadow Ring",
         back="Moonlight Cape",waist="Flax Sash",legs="Wakido Haidate +4",feet="Amm Greaves"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
@@ -194,7 +194,7 @@ function init_gear_sets()
 		left_ear="Dedition Earring",right_ear="Kasuga Earring +2",left_ring="Murky Ring",right_ring="Niqmaddu Ring",back=gear.stp_jse_back}
     	
 	sets.engaged.Subtle = {ammo="Aurgelmir Orb +1",head="Ken. Jinpachi +1",body="Dagon Breast.",
-		hands="Wakido Kote +3",legs="Mpaca's Hose",feet="Ryuo Sune-Ate +1",neck="Bathy Choker +1",waist="Sarissapho. Belt",
+		hands="Wakido Kote +4",legs="Mpaca's Hose",feet="Ryuo Sune-Ate +1",neck="Bathy Choker +1",waist="Sarissapho. Belt",
 		left_ear="Digni. Earring",right_ear="Schere Earring",left_ring="Chirich Ring +1",right_ring="Niqmaddu Ring",back=gear.stp_jse_back}
    
    
@@ -207,8 +207,8 @@ function init_gear_sets()
 	sets.Cure_Received = {}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Vim Torque +1"}
-	sets.buff.Hasso = {hands="Wakido Kote +3"}
-	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
+	sets.buff.Hasso = {hands="Wakido Kote +4"}
+	sets.buff['Third Eye'] = {legs="Sakonji Haidate +4"}
     sets.buff.Sekkanoki = {hands="Kasuga Kote +3"}
     sets.buff.Sengikori = {feet="Kas. Sune-Ate +3"}
     sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate +3"}

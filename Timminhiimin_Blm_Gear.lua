@@ -4,7 +4,7 @@ function user_setup()
 	state.CastingMode:options('Normal','Resistant','Fodder','Proc','OccultAcumen')
 	state.OffenseMode:options('Normal')
 	state.IdleMode:options('Normal', 'PDT', 'TPEat','DTHippo')
-	state.Weapons:options('None','NukeWeapons','Khatvanga','Malevolence')
+	state.Weapons:options('None','NukeWeapons','Staff')
 
 		
 	gear.nuke_jse_back = {name="Taranus's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}
@@ -43,6 +43,7 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.NukeWeapons = {main="Bunzi's Rod",sub="Ammurapi Shield"}
+	sets.weapons.Staff = {main="Mpaca's Staff",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
 	sets.weapons.Malevolence = {main="Malevolence",sub="Ammurapi Shield"}
 	

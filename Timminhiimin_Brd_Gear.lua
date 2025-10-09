@@ -153,7 +153,10 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
-	sets.midcast.Ballad = {main="Carnwenhan",sub="Genmei Shield",range="Miracle Cheer",head="Fili Calot +3",body="Fili Hongreline +3",
+	sets.midcast.Ballad = {main="Carnwenhan",sub="Genmei Shield",
+	-- range="Miracle Cheer",
+	range="Gjallarhorn",
+	head="Fili Calot +3",body="Fili Hongreline +3",
 		hands="Fili Manchettes +3",legs="Fili Rhingrave +3",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
 		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Murky Ring",right_ring="Kishar Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
@@ -203,7 +206,10 @@ function init_gear_sets()
 	
 	sets.midcast.Minuet = {}
 	
-	sets.midcast.Minne = {main="Carnwenhan",sub="Genmei Shield",range="Miracle Cheer",head="Fili Calot +3",body="Fili Hongreline +3",
+	sets.midcast.Minne = {main="Carnwenhan",sub="Genmei Shield",
+	-- range="Miracle Cheer",
+	range="Gjallarhorn",
+	head="Fili Calot +3",body="Fili Hongreline +3",
 		hands="Fili Manchettes +3",legs="Mousai Seraweels +1",feet="Brioso Slippers +3",neck="Mnbw. Whistle +1",waist="Flume Belt +1",
 		left_ear="Etiolation Earring",right_ear="Arete del Luna +1",left_ring="Murky Ring",right_ring="Kishar Ring",
 		back={ name="Intarabus's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}}
@@ -328,12 +334,12 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
 	sets.engaged = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
-		head="Aya. Zucchetto +2",body="Nyame Mail",hands="Bunzi's Gloves",legs="Volte Tights",
+		head="Aya. Zucchetto +2",body="Ashera Harness",hands="Bunzi's Gloves",legs="Volte Tights",
 		feet="Nyame Sollerets",neck="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",right_ear="Cessance Earring",
 		left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}}
 	sets.engaged.Acc = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},head="Aya. Zucchetto +2",
-		body="Nyame Mail",hands="Bunzi's Gloves",legs="Volte Tights",feet="Nyame Sollerets",neck="Bard's Charm +2",
+		body="Ashera Harness",hands="Bunzi's Gloves",legs="Volte Tights",feet="Nyame Sollerets",neck="Bard's Charm +2",
 		waist="Sailfi Belt +1",left_ear="Eabani Earring",right_ear="Suppanomimi",left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back="Null Shawl",}
 
