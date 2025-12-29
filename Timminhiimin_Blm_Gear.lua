@@ -178,7 +178,7 @@ function init_gear_sets()
 
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Wicce Earring +2",
-        body="Shango Robe",hands="Arch. Gloves +3",ring1="Evanescence Ring",ring2="Archon Ring",
+        body="Shango Robe",hands="Arch. Gloves +4",ring1="Evanescence Ring",ring2="Archon Ring",
         back="Aurist's Cape +1",waist="Fucho-no-obi",legs="Agwu's Slops",feet="Agwu Pigaches"}
     
     sets.midcast.Aspir = sets.midcast.Drain

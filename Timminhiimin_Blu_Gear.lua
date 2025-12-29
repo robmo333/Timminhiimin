@@ -8,7 +8,7 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('MagicWeapons','Tizona','Naegling','Tizalmace','MeleeClubs','BS')
+	state.Weapons:options('MagicWeapons','Tizona','TizonaDW','Naegling','Tizalmace','MeleeClubs','BS')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
@@ -50,7 +50,7 @@ function init_gear_sets()
 
 	sets.buff['Burst Affinity'] = {feet="Hashi. Basmak +3"}
 	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs"}
-	sets.buff.Convergence = {head="Luh. Keffiyeh +3"}
+	sets.buff.Convergence = {head="Luhlaza Keffiyeh +4"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +3"}
@@ -59,7 +59,7 @@ function init_gear_sets()
 	-- Precast Sets
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands"}
+	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands +3"}
 
 
 	-- Waltz set (chr and vit)
@@ -106,8 +106,8 @@ function init_gear_sets()
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-	sets.precast.WS['Requiescat'] = {ammo="Aurgelmir Orb +1",head={ name="Luh. Keffiyeh +3", augments={'Enhances "Convergence" effect',}},
-		body={ name="Luhlaza Jubbah +3", augments={'Enhances "Enchainment" effect',}},
+	sets.precast.WS['Requiescat'] = {ammo="Aurgelmir Orb +1",head="Luhlaza Keffiyeh +4",
+		body="Luhlaza Jubbah +4",
 		hands={ name="Luh. Bazubands +3", augments={'Enhances "Azure Lore" effect',}},
 		legs= "Gleti's Breeches",
 		feet={ name="Luhlaza Charuqs +3", augments={'Enhances "Diffusion" effect',}},
@@ -168,8 +168,8 @@ function init_gear_sets()
 	-- Physical Spells --
 
 	sets.midcast['Blue Magic'].Physical = {ammo="Aurgelmir Orb +1",
-		head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Tati Earring +1",ear2="Tati Earring +1",
-		body="Luhlaza Jubbah +3",hands="Luh. Bazubands +3",ring1="Ifrit's Ring +1",ring2="Shukuyu Ring",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Tati Earring +1",ear2="Tati Earring +1",
+		body="Luhlaza Jubbah +4",hands="Luh. Bazubands +3",ring1="Ifrit's Ring +1",ring2="Shukuyu Ring",
 		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},waist="Prosilio Belt +1",legs="Hashishin Tayts +3",feet="Luhlaza Charuqs +3"}
 
 	sets.midcast['Blue Magic'].Physical.Resistant = set_combine(sets.midcast['Blue Magic'].Physical, {})
@@ -282,7 +282,7 @@ function init_gear_sets()
 	-- Breath Spells --
 
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
-				head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
+				head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
 				body="Assim. Jubbah +3",hands="Luh. Bazubands +3",ring1="Kunaji Ring",ring2="Meridian Ring",
 				back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
 
@@ -329,12 +329,12 @@ function init_gear_sets()
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
 	
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Njordr Earring",ear2="Hashishin Earring +1",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Njordr Earring",ear2="Hashishin Earring +1",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +3",neck="Mirage Stole +2",ear1="Gifted Earring",ear2="Hashishin Earring +1",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Gifted Earring",ear2="Hashishin Earring +1",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
 
@@ -399,7 +399,8 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
 	sets.weapons.MeleeClubs = {main="Maxentius",sub="Thibron"}
-	sets.weapons.Tizona = {main="Tizona",sub="Thibron"}
+	sets.weapons.TizonaDW = {main="Tizona",sub="Thibron"}
+	sets.weapons.Tizona = {main="Tizona",sub="Genmei Shield"}
 	sets.weapons.Naegling = {main="Naegling",sub="Thibron"}
 	sets.weapons.MagicWeapons = {main="Maxentius",sub="Bunzi's Rod"}
 	sets.weapons.BS = {main="Save the queen II",sub="Chicken Knife II"}	
