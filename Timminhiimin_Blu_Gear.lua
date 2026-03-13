@@ -51,7 +51,7 @@ function init_gear_sets()
 	sets.buff['Burst Affinity'] = {feet="Hashi. Basmak +3"}
 	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs"}
 	sets.buff.Convergence = {head="Luhlaza Keffiyeh +4"}
-	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
+	sets.buff.Diffusion = {feet="Luhlaza Charuqs +4"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +3"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
@@ -59,7 +59,7 @@ function init_gear_sets()
 	-- Precast Sets
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands +3"}
+	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazu. +4"}
 
 
 	-- Waltz set (chr and vit)
@@ -108,9 +108,9 @@ function init_gear_sets()
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = {ammo="Aurgelmir Orb +1",head="Luhlaza Keffiyeh +4",
 		body="Luhlaza Jubbah +4",
-		hands={ name="Luh. Bazubands +3", augments={'Enhances "Azure Lore" effect',}},
+		hands="Luh. Bazu. +4",
 		legs= "Gleti's Breeches",
-		feet={ name="Luhlaza Charuqs +3", augments={'Enhances "Diffusion" effect',}},
+		feet={ name="Luhlaza Charuqs +4", augments={'Enhances "Diffusion" effect',}},
 		neck="Fotia Gorget",waist="Fotia Belt",left_ear="Brutal Earring",right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		left_ring="Epona's Ring",right_ring="Epaminondas's Ring",
 		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
@@ -139,7 +139,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Sanguine Blade'] = {ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
 		head="Pixie Hairpin +1",body={ name="Nyame Mail", augments={'Path: B',}},hands="Jhakri Cuffs +2",
-		legs={ name="Luhlaza Shalwar +3", augments={'Enhances "Assimilation" effect',}},
+		legs="Luh. Shalwar +4",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},neck="Sibyl Scarf",waist="Orpheus's Sash",
 		left_ear="Friomisi Earring",right_ear="Regal Earring",left_ring="Archon Ring",
 		right_ring="Epaminondas's Ring",back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}}
@@ -169,8 +169,8 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Physical = {ammo="Aurgelmir Orb +1",
 		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Tati Earring +1",ear2="Tati Earring +1",
-		body="Luhlaza Jubbah +4",hands="Luh. Bazubands +3",ring1="Ifrit's Ring +1",ring2="Shukuyu Ring",
-		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},waist="Prosilio Belt +1",legs="Hashishin Tayts +3",feet="Luhlaza Charuqs +3"}
+		body="Luhlaza Jubbah +4",hands="Luh. Bazu. +4",ring1="Ifrit's Ring +1",ring2="Shukuyu Ring",
+		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},waist="Prosilio Belt +1",legs="Hashishin Tayts +3",feet="Luhlaza Charuqs +4"}
 
 	sets.midcast['Blue Magic'].Physical.Resistant = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
@@ -283,8 +283,8 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 				head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
-				body="Assim. Jubbah +3",hands="Luh. Bazubands +3",ring1="Kunaji Ring",ring2="Meridian Ring",
-				back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
+				body="Assim. Jubbah +3",hands="Luh. Bazu. +4",ring1="Kunaji Ring",ring2="Meridian Ring",
+				back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +4"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
@@ -329,14 +329,14 @@ function init_gear_sets()
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
 	
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
-		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Njordr Earring",ear2="Hashishin Earring +1",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Njordr Earring",ear2="Hashishin Earring +2",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
+		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +4"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
-		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Gifted Earring",ear2="Hashishin Earring +1",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +2",ear1="Gifted Earring",ear2="Hashishin Earring +2",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
+		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +4"}
 
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {waist="Gishdubar Sash"})
 
