@@ -8,7 +8,7 @@ function user_setup()
 	state.MagicalDefenseMode:options('MDT','MDTReraise')
 	state.ResistDefenseMode:options('MEVA')
     state.IdleMode:options('Normal', 'Reraise')
-	state.Weapons:options('Dojikiri','Kusanagi','Polearm')
+	state.Weapons:options('Kusanagi','Dojikiri','Polearm')
 
 	gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
 	gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
@@ -101,6 +101,10 @@ function init_gear_sets()
 		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		left_ring="Weather. Ring",right_ring="Niqmaddu Ring",
 		back=gear.ws_jse_back}
+		
+	sets.precast.WS['Tachi: Mumei'] = {ammo="Knobkierrie",head="Mpaca's Cap",body="Sakonji Do. +4",hands="Kasuga Kote +3",legs="Wakido Haidate +4",
+		feet="Nyame Sollerets",neck="Sam. Nodowa +2",waist="Sailfi Belt +1",left_ear="Moonshade Earring",right_ear="Kasuga Earring +2",
+		left_ring="Sroda Ring",right_ring="Epaminondas's Ring",back=gear.ws_jse_back}
 	
 	sets.precast.WS['Apex Arrow'] = {}
 	

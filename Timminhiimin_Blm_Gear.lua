@@ -4,7 +4,7 @@ function user_setup()
 	state.CastingMode:options('Normal','Resistant','Fodder','Proc','OccultAcumen')
 	state.OffenseMode:options('Normal')
 	state.IdleMode:options('Normal', 'PDT', 'TPEat','DTHippo')
-	state.Weapons:options('None','NukeWeapons','Staff')
+	state.Weapons:options('None','Club','Staff')
 
 		
 	gear.nuke_jse_back = {name="Taranus's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}
@@ -42,10 +42,9 @@ function init_gear_sets()
     --------------------------------------
 	
 	-- Weapons sets
-	sets.weapons.NukeWeapons = {main="Bunzi's Rod",sub="Ammurapi Shield"}
-	sets.weapons.Staff = {main="Mpaca's Staff",sub="Enki Strap"}
-	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
-	sets.weapons.Malevolence = {main="Malevolence",sub="Ammurapi Shield"}
+	sets.weapons.Club = {main="Bunzi's Rod",sub="Ammurapi Shield"}
+	sets.weapons.Staff = {main="Marin Staff +1",sub="Enki Strap"}
+	
 	
 	-- Treasure Hunter
 	
@@ -99,10 +98,11 @@ function init_gear_sets()
 		body="Zendik Robe",hands="Hagondes Cuffs +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.nuke_jse_back,waist="Fotia Belt",legs="Hagondes Pants +1",feet=gear.merlinic_nuke_feet}
 
-    sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum +1",
-		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
-		body="Amalric Doublet +1",hands="Regal Cuffs",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		back="Aurist's Cape +1",waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Medium's Sabots"}
+    sets.precast.WS['Myrkr'] = {ammo="Strobilus",head="Pixie Hairpin +1",body={ name="Amalric Doublet +1", augments={'MP+80','"Mag.Atk.Bns."+25','"Fast Cast"+4',}},
+		hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",
+		neck="Dualism Collar +1",waist="Shinjutsu-no-Obi +1",left_ear="Nehalennia Earring",
+		right_ear="Moonshade Earring",left_ring="Mephitas's Ring +1",right_ring="Mephitas's Ring",
+		back={ name="Taranus's Cape", augments={'MP+60','Eva.+8 /Mag. Eva.+8','"Fast Cast"+10','Phys. dmg. taken-10%',}}}
     
     
     ---- Midcast Sets ----
@@ -215,22 +215,22 @@ function init_gear_sets()
 		
     -- Elemental Magic sets
     
-    sets.midcast['Elemental Magic'] = {ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
-		head="Ea Hat +1",body="Wicce Coat +3",hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",
-		neck={ name="Src. Stole +2", augments={'Path: A',}},waist={ name="Acuity Belt +1", augments={'Path: A',}},
-		left_ear="Regal Earring",right_ear="Malignance Earring",left_ring="Medada's Ring",right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    sets.midcast['Elemental Magic'] = {ammo="Sroda Tathlum",head="Wicce Petasos +3",body="Spae. Coat +4",
+		hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",neck="Src. Stole +2",
+		waist="Acuity Belt +1",left_ear="Malignance Earring",right_ear="Regal Earring",
+		left_ring="Medada's Ring",right_ring="Metamor. Ring +1",
 		back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}}
 		
-    sets.midcast['Elemental Magic'].Resistant = {ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
-		head="Ea Hat +1",body="Wicce Coat +3",hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",
-		neck={ name="Src. Stole +2", augments={'Path: A',}},waist={ name="Acuity Belt +1", augments={'Path: A',}},
-		left_ear="Regal Earring",right_ear="Malignance Earring",left_ring="Medada's Ring",right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    sets.midcast['Elemental Magic'].Resistant = {ammo="Sroda Tathlum",head="Wicce Petasos +3",body="Spae. Coat +4",
+		hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",neck="Src. Stole +2",
+		waist="Acuity Belt +1",left_ear="Malignance Earring",right_ear="Regal Earring",
+		left_ring="Medada's Ring",right_ring="Metamor. Ring +1",
 		back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}}
 		
-    sets.midcast['Elemental Magic'].Fodder = {ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
-		head="Ea Hat +1",body="Wicce Coat +3",hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",
-		neck={ name="Src. Stole +2", augments={'Path: A',}},waist={ name="Acuity Belt +1", augments={'Path: A',}},
-		left_ear="Regal Earring",right_ear="Malignance Earring",left_ring="Medada's Ring",right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    sets.midcast['Elemental Magic'].Fodder = {ammo="Sroda Tathlum",head="Wicce Petasos +3",body="Spae. Coat +4",
+		hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",neck="Src. Stole +2",
+		waist="Acuity Belt +1",left_ear="Malignance Earring",right_ear="Regal Earring",
+		left_ring="Medada's Ring",right_ring="Metamor. Ring +1",
 		back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}}
 
 	sets.midcast['Elemental Magic'].HighTierNuke = sets.midcast['Elemental Magic']
@@ -267,7 +267,7 @@ function init_gear_sets()
     -- Normal refresh idle set
     sets.idle = {ammo="Staunch Tathlum +1",head="Null Masque",body="Shamash Robe",hands="Wicce Gloves +3",legs="Assid. Pants +1",
 		feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+18','Pet: STR+4','"Refresh"+1','Accuracy+6 Attack+6',}},
-		neck="Null Loop",waist="Shinjutsu-no-Obi +1",left_ear="Gifted Earring",right_ear="Wicce Earring +2",left_ring="Stikini Ring +1",
+		neck="Null Loop",waist="Shinjutsu-no-Obi +1",left_ear="Nehalennia Earring",right_ear="Gifted Earring",left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",back={ name="Taranus's Cape", augments={'MP+60','Eva.+8 /Mag. Eva.+8','"Fast Cast"+10','Phys. dmg. taken-10%',}}}
 
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
@@ -323,14 +323,20 @@ function init_gear_sets()
     sets.buff['Mana Wall'] = {back=gear.nuke_jse_back,feet="Wicce Sabots +3"}
 	
 	-- Gear that converts elemental damage done to recover MP.	
-	sets.RecoverMP = {body="Spaekona's Coat +3"}
+	sets.RecoverMP = {body="Spaekona's Coat +4"}
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
-		head="Ea Hat +1",body="Wicce Coat +3",hands="Wicce Gloves +3",legs="Wicce Chausses +3",feet="Wicce Sabots +3",
-		neck={ name="Src. Stole +2", augments={'Path: A',}},waist={ name="Acuity Belt +1", augments={'Path: A',}},
-		left_ear="Regal Earring",right_ear="Malignance Earring",left_ring="Medada's Ring",right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}}
+    
+	--sets.MagicBurst = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
+		--head="Ea Hat +1",body="Wicce Coat +3",hands="Agwu's Gages",legs="Arch. Tonban +4",
+		--feet="Wicce Sabots +3",neck="Src. Stole +2",waist="Sacro Cord",left_ear="Malignance Earring",
+		--right_ear="Wicce Earring +2",left_ring="Mujin Band",right_ring="Medada's Ring",
+		--back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}}
 	
+	sets.MagicBurst = {main="Marin Staff +1",sub="Enki Strap",ammo="Ghastly Tathlum +1",
+		head="Ea Hat +1",body="Wicce Coat +3",hands="Agwu's Gages",legs="Wicce Chausses +3",
+		feet="Agwu's Pigaches",neck="Src. Stole +2",waist="Sacro Cord",
+		left_ear="Malignance Earring", right_ear="Wicce Earring +2",left_ring="Mujin Band",right_ring="Medada's Ring",
+		back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}}
 	
 	-- Gear for specific elemental nukes.
 	sets.element.Wind = {}

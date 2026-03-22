@@ -70,7 +70,7 @@ function init_gear_sets()
 
 	sets.precast.Step = {ammo="Falcon Eye",
 					head="Dampening Tam",neck="Combatant's Torque",ear1="Regal Earring",ear2="Telos Earring",
-					body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+					body="Assim. Jubbah +3",hands="Assim. Bazu. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 					back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 	sets.precast.Flourish1 = {ammo="Falcon Eye",
@@ -100,43 +100,30 @@ function init_gear_sets()
                   body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},hands="Jhakri Cuffs +2",ring1="Epona's Ring",ring2="Apate Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
-	sets.precast.WS.Fodder = {ammo="Ginsen",
-				  head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},hands="Jhakri Cuffs +2",ring1="Epona's Ring",ring2="Apate Ring",
-				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
-
+	
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = {ammo="Aurgelmir Orb +1",head="Luhlaza Keffiyeh +4",
-		body="Luhlaza Jubbah +4",
-		hands="Luh. Bazu. +4",
-		legs= "Gleti's Breeches",
-		feet={ name="Luhlaza Charuqs +4", augments={'Enhances "Diffusion" effect',}},
-		neck="Fotia Gorget",waist="Fotia Belt",left_ear="Brutal Earring",right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+		body="Luhlaza Jubbah +4",hands="Luh. Bazu. +4",legs= "Gleti's Breeches",
+		feet="Luhlaza Charuqs +4",neck="Fotia Gorget",waist="Fotia Belt",left_ear="Brutal Earring",right_ear="Moonshade Earring",
 		left_ring="Epona's Ring",right_ring="Epaminondas's Ring",
 		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}}
-	sets.precast.WS['Requiescat'].Fodder = set_combine(sets.precast.WS['Requiescat'], {})
-
+	
 	sets.precast.WS['Realmrazer'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +2",ear1="Regal Earring",body="Jhakri Robe +2",ring2="Rufescent Ring",legs="Jhakri Slops +2",feet=" Hashi. Basmak +3"})
-	sets.precast.WS['Realmrazer'].Fodder = set_combine(sets.precast.WS['Realmrazer'], {})
-
+	
 	sets.precast.WS['Chant du Cygne'] = {ammo="Aurgelmir Orb +1",head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
 		body="Gleti's Cuirass",hands="Gleti's Gauntlets",legs="Gleti's Breeches",feet="Gleti's Boots",
 		neck="Mirage Stole +2",waist="Fotia Belt",left_ear="Mache Earring +1",right_ear="Odr Earring",
 		left_ring="Epona's Ring",right_ring="Begrudging Ring",
 		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}}
-	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
-
+	
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS['Expiacion'], {})
-	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {})
-
+	
 	sets.precast.WS['Vorpal Blade'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet +1",ear1="Cessance Earring", ear2="Brutal Earring",ring2="Begrudging Ring",back=gear.crit_jse_back,feet="Thereoid Greaves"})
-	sets.precast.WS['Vorpal Blade'].Fodder = set_combine(sets.precast.WS['Vorpal Blade'], {})
-
+	
 	sets.precast.WS['Expiacion'] = {ammo="Crepuscular pebble",head="Hashishin Kavuk +3",neck="Mirage Stole +2",ear1="Moonshade Earring",
 		ear2="Ishvara Earring",body="Gleti's Cuirass",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Sroda Ring",
-		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},waist="Sailfi Belt +1",legs="Gleti's Breeches",feet="Nyame Sollerets"}
-	sets.precast.WS['Expiacion'].Fodder = set_combine(sets.precast.WS['Expiacion'], {})
-
+		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+	
 	sets.precast.WS['Sanguine Blade'] = {ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
 		head="Pixie Hairpin +1",body={ name="Nyame Mail", augments={'Path: B',}},hands="Jhakri Cuffs +2",
 		legs="Luh. Shalwar +4",
@@ -150,8 +137,7 @@ function init_gear_sets()
 			         back=gear.mab_jse_back,waist="Yamabuki-no-Obi",legs="Jhakri Slops +2",feet=" Hashi. Basmak +3"}
 					 
 	sets.precast.WS['Black Halo'] = set_combine(sets.precast.WS['Expiacion'], {})
-	sets.precast.WS['Black Halo'].Fodder = set_combine(sets.precast.WS['Expiacion'], {})
-	
+		
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}

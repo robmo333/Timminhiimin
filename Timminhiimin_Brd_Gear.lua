@@ -319,12 +319,13 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
 	sets.engaged = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
-		head="Revelation Masque",body="Ashera Harness",hands="Revelation Gaunt.",legs="Revelation Brais",
+		head="Revelation Masque",body="Revelation platemail",hands="Revelation Gaunt.",legs="Revelation Brais",
 		feet="Revelation Sab.",neck="Bard's Charm +2",waist="Reiki Yotai",left_ear="Telos Earring",
 		right_ear="Cessance Earring",left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
+	
 	sets.engaged.Fencer = {range={ name="Linos", augments={'Accuracy+15','"Store TP"+4','Quadruple Attack +3',}},
-		head="Revelation Masque",body="Ashera Harness",hands="Revelation Gaunt.",legs="Revelation Brais",
+		head="Revelation Masque",body="Revelation platemail",hands="Revelation Gaunt.",legs="Revelation Brais",
 		feet="Revelation Sab.",neck="Bard's Charm +2",waist="Sweordfaetels +1",left_ear="Telos Earring",
 		right_ear="Cessance Earring",left_ring="Moonlight Ring",right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}}
