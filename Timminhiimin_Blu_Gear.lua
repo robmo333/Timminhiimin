@@ -343,7 +343,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
 		legs="Hashishin Tayt +3",feet="Malignance Boots",
-		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Infused Earring",left_ring="Vengeful Ring",
+		neck="Bathy Choker +1",waist="Null Belt",left_ear="Eabani Earring",right_ear="Infused Earring",left_ring="Defending Ring",
 		right_ring="Murky Ring",back="Null Shawl"}
 
 	sets.idle.PDT = {ammo="Staunch Tathlum +1",head="Null Masque",body="Malignance Tabard",hands="Malignance Gloves",
